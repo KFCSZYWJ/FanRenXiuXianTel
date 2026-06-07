@@ -43,6 +43,12 @@
         continue;
       }
 
+      const optBracket = part.match(/^\[(.+)\]$/);
+      if (optBracket) {
+        tokens.push({ type: "input", name: optBracket[1], raw: part });
+        continue;
+      }
+
       tokens.push({ type: "static", value: part, raw: part });
     }
 
@@ -124,21 +130,19 @@
           "</div>";
         fieldIds.push(id + "-count");
       } else if (t.type === "choice") {
-        let optsHtml = "";
+        let optsHtml = `<select class="xr-form-input xr-form-select" id="${id}">`;
+        optsHtml += `<option value="">-- 请选择 --</option>`;
         for (let j = 0; j < t.choices.length; j++) {
           const val = t.choices[j].trim();
-          optsHtml +=
-            `<label class="xr-pf-opt">` +
-            `<input type="radio" name="pf-${i}" value="${escapeHtml(val)}"${j === 0 ? " checked" : ""} />` +
-            `<span>${escapeHtml(val)}</span>` +
-            "</label>";
+          optsHtml += `<option value="${escapeHtml(val)}">${escapeHtml(val)}</option>`;
         }
+        optsHtml += `</select>`;
         formHtml +=
           '<div class="xr-form-group">' +
           `<label class="xr-form-label">${escapeHtml(t.name)}</label>` +
-          `<div class="xr-pf-opts" id="${id}">${optsHtml}</div>` +
+          optsHtml +
           `<div class="xr-pf-custom-row">` +
-          `<input class="xr-form-input" id="${id}-custom" placeholder="自定义输入（留空使用上方选项）" />` +
+          `<input class="xr-form-input" id="${id}-custom" placeholder="或在此输入自定义值" />` +
           `</div>` +
           "</div>";
         fieldIds.push(id + "-custom");
@@ -219,10 +223,13 @@
             const hasBrackets = t.raw.indexOf("<") === 0;
             values.push({ name: t.name, value: customVal, raw: t.raw, noBrackets: !hasBrackets });
           } else {
-            const sel = document.querySelector(`input[name="pf-${i}"]:checked`);
-            if (sel) {
+            const sel = document.getElementById("xr-pf-" + i);
+            if (sel && sel.value) {
               const hasBrackets = t.raw.indexOf("<") === 0;
               values.push({ name: t.name, value: sel.value, raw: t.raw, noBrackets: !hasBrackets });
+            } else {
+              valid = false;
+              showToast("请选择一个选项或输入自定义值", 1500);
             }
           }
         } else {
@@ -253,8 +260,8 @@
           if (t.type === "static") continue;
           const id = "xr-pf-" + i;
           if (t.type === "choice") {
-            const sel = overlay.querySelector(`input[name="pf-${i}"]:checked`);
-            if (sel) fieldValues[id] = sel.value;
+            const sel = document.getElementById("xr-pf-" + i);
+            if (sel && sel.value) fieldValues[id] = sel.value;
           } else if (t.type === "quantity") {
             const valEl = document.getElementById(id);
             const cntEl = document.getElementById(id + "-count");

@@ -322,7 +322,6 @@
     const expandBtn = panel.querySelector("#xr-expand-btn");
     expandBtn.addEventListener("click", (e) => {
       e.stopPropagation();
-      if (_xrActiveTab !== "commands") return;
       _xrAllExpanded = !_xrAllExpanded;
       expandBtn.textContent = _xrAllExpanded ? "⊟" : "⊞";
       panel.querySelectorAll(".xr-category").forEach((cat) => {

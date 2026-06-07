@@ -13,6 +13,11 @@
     formation:  { label: "阵法",   icon: "🔮" },
     quest_item: { label: "任务物品", icon: "📦" },
     badge:      { label: "徽章",   icon: "🏅" },
+    talisman:   { label: "符箓",   icon: "📿" },
+    special_item:  { label: "特殊物品", icon: "✨" },
+    special_tool:  { label: "特殊工具", icon: "🔧" },
+    loot_box:   { label: "战利品箱", icon: "🎁" },
+    recipe_internal: { label: "内部配方", icon: "📄" },
   };
 
   let _cache = null;

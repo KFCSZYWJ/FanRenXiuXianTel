@@ -727,6 +727,7 @@
 
 .xr-cmd-item.xr-faved .xr-cmd-name {
   color: var(--xr-text);
+}
 
 /* Favorites section */
 .xr-fav-section {
@@ -862,27 +863,29 @@
 /* ========== Tab Bar ========== */
 .xr-tab-bar {
   display: flex;
-  gap: 2px;
-  padding: 6px 12px 0;
+  gap: 4px;
+  padding: 8px 12px 0;
+  background: var(--xr-surface);
   border-bottom: 1px solid var(--xr-border);
   flex-shrink: 0;
 }
 
 .xr-tab-btn {
-  padding: 6px 14px;
+  padding: 8px 18px;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--xr-text-muted);
   background: transparent;
   border: none;
-  border-bottom: 2px solid transparent;
   cursor: pointer;
   transition: all var(--xr-transition);
   font-family: inherit;
-  border-radius: 6px 6px 0 0;
+  border-radius: 8px 8px 0 0;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
+  position: relative;
+  letter-spacing: 0.3px;
 }
 
 .xr-tab-btn:hover {
@@ -892,8 +895,18 @@
 
 .xr-tab-btn.active {
   color: var(--xr-accent);
-  border-bottom-color: var(--xr-accent);
   background: var(--xr-accent-dim);
+}
+
+.xr-tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background: var(--xr-accent);
+  border-radius: 1px 1px 0 0;
 }
 
 /* ========== Param Form: Custom Input ========== */
