@@ -92,7 +92,8 @@
       const cmds = cat.commands.filter((c) => matchCmd(c, q));
       if (cmds.length === 0) continue;
       const items = cmds.map((c) => buildCmdItem(c)).join("");
-      const expanded = q ? " xr-expanded" : "";
+      const isAllExpanded = window.XrCore && XrCore.xrAllExpanded;
+      const expanded = q ? " xr-expanded" : (isAllExpanded ? " xr-expanded" : "");
       html +=
         `<div class="xr-category${expanded}" data-cat="${XrUtils.escapeHtml(cat.name)}">` +
         '<div class="xr-category-header">' +

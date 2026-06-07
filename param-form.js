@@ -66,6 +66,28 @@
     return result;
   }
 
+  // ─── Param Memory (localStorage) ─────────────────────────────
+
+  function saveParamMemory(cmdStr, fieldValues) {
+    try {
+      const mem = JSON.parse(localStorage.getItem("xr_param_memory")) || {};
+      mem[cmdStr] = fieldValues;
+      const keys = Object.keys(mem);
+      if (keys.length > 50) {
+        const toDelete = keys.slice(0, keys.length - 50);
+        toDelete.forEach((k) => delete mem[k]);
+      }
+      localStorage.setItem("xr_param_memory", JSON.stringify(mem));
+    } catch (e) { /* ignore */ }
+  }
+
+  function loadParamMemory(cmdStr) {
+    try {
+      const mem = JSON.parse(localStorage.getItem("xr_param_memory")) || {};
+      return mem[cmdStr] || null;
+    } catch (e) { return null; }
+  }
+
   // ─── Param Form Modal ────────────────────────────────────────
 
   function openParamForm(cmdObj) {
@@ -144,6 +166,21 @@
 
     document.body.appendChild(overlay);
 
+    // Restore param memory
+    const savedMemory = loadParamMemory(cmdObj.cmd);
+    if (savedMemory) {
+      Object.keys(savedMemory).forEach((key) => {
+        const el = document.getElementById(key);
+        if (!el) return;
+        if (el.tagName === "DIV" && el.classList.contains("xr-pf-opts")) {
+          const radio = el.querySelector(`input[type="radio"][value="${savedMemory[key]}"]`);
+          if (radio) radio.checked = true;
+        } else {
+          el.value = savedMemory[key];
+        }
+      });
+    }
+
     function close() {
       overlay.remove();
     }
@@ -198,6 +235,26 @@
         XrStorage.addRecent({ cmd: cmdObj.cmd, params: cmdObj.params, desc: cmdObj.desc || "" });
         document.querySelector(".xr-panel-wrap")?.classList.remove("xr-open");
         showToast(`已填入: ${cmdObj.cmd}`);
+        // Save param memory
+        const fieldValues = {};
+        for (let i = 0; i < tokens.length; i++) {
+          const t = tokens[i];
+          if (t.type === "static") continue;
+          const id = "xr-pf-" + i;
+          if (t.type === "choice") {
+            const sel = overlay.querySelector(`input[name="pf-${i}"]:checked`);
+            if (sel) fieldValues[id] = sel.value;
+          } else if (t.type === "quantity") {
+            const valEl = document.getElementById(id);
+            const cntEl = document.getElementById(id + "-count");
+            if (valEl && valEl.value.trim()) fieldValues[id] = valEl.value.trim();
+            if (cntEl && cntEl.value.trim()) fieldValues[id + "-count"] = cntEl.value.trim();
+          } else {
+            const el = document.getElementById(id);
+            if (el && el.value.trim()) fieldValues[id] = el.value.trim();
+          }
+        }
+        if (Object.keys(fieldValues).length > 0) saveParamMemory(cmdObj.cmd, fieldValues);
         close();
       } else {
         showToast("未找到输入框，请先打开聊天", 2000);

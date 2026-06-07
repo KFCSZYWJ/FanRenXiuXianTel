@@ -3,6 +3,7 @@
   "use strict";
 
   let _xr_filling = false;
+  let _xrAllExpanded = false;
 
   // ─── Utilities (exposed for other modules) ───────────────────
 
@@ -223,6 +224,7 @@
       '<div class="xr-panel-title-row">' +
       '<div class="xr-panel-title"><span class="xr-title-icon">⚡</span>修仙命令面板</div>' +
       '<div class="xr-panel-actions">' +
+      '<button class="xr-action-btn" id="xr-expand-btn" title="展开/收起全部">⤢</button>' +
       '<button class="xr-action-btn" id="xr-theme-btn" title="切换主题"></button>' +
       '<button class="xr-action-btn" id="xr-add-btn" title="新增命令">＋</button>' +
       "</div>" +
@@ -293,6 +295,17 @@
       themeBtn.textContent = t === "dark" ? "☀️" : "🌙";
     });
 
+    // Expand/collapse all
+    const expandBtn = panel.querySelector("#xr-expand-btn");
+    expandBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      _xrAllExpanded = !_xrAllExpanded;
+      expandBtn.textContent = _xrAllExpanded ? "⤡" : "⤢";
+      panel.querySelectorAll(".xr-category").forEach((cat) => {
+        cat.classList.toggle("xr-expanded", _xrAllExpanded);
+      });
+    });
+
     // Keyboard shortcuts
     document.addEventListener("keydown", (e) => {
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
@@ -326,7 +339,9 @@
   }
 
   window.XrCore = {
-    bindCmdClicks, positionPanel, enableDrag
+    bindCmdClicks, positionPanel, enableDrag,
+    get xrAllExpanded() { return _xrAllExpanded; },
+    set xrAllExpanded(v) { _xrAllExpanded = v; }
   };
 
   // ─── Launch ──────────────────────────────────────────────────
