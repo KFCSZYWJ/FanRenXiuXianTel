@@ -11,7 +11,7 @@
   "content_scripts": [
     {
       "matches": ["*://web.telegram.org/k/*"],
-      "js": ["commands.js", "content.js"],
+      "js": ["commands.js", "storage.js", "panel-ui.js", "param-form.js", "editor.js", "autocomplete.js", "content.js"],
       "css": ["content.css"],
       "run_at": "document_idle"
     }
