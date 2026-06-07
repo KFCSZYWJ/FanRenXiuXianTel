@@ -4,6 +4,11 @@
 
   let _xr_filling = false;
   let _xrAllExpanded = false;
+  let _xrActiveTab = "commands";
+  const _xrTabs = [
+    { id: "commands", label: "命令", icon: "⚡" },
+    { id: "items", label: "物品图鉴", icon: "📖" },
+  ];
 
   // ─── Utilities (exposed for other modules) ───────────────────
 
@@ -224,24 +229,43 @@
       '<div class="xr-panel-title-row">' +
       '<div class="xr-panel-title"><span class="xr-title-icon">⚡</span>修仙命令面板</div>' +
       '<div class="xr-panel-actions">' +
-      '<button class="xr-action-btn" id="xr-expand-btn" title="展开/收起全部">⤢</button>' +
+      '<button class="xr-action-btn" id="xr-expand-btn" title="展开/收起全部">⊞</button>' +
       '<button class="xr-action-btn" id="xr-theme-btn" title="切换主题"></button>' +
       '<button class="xr-action-btn" id="xr-add-btn" title="新增命令">＋</button>' +
       "</div>" +
       "</div>" +
       '<input class="xr-search-box" type="text" placeholder="搜索命令..." spellcheck="false" />' +
       "</div>" +
-      '<div class="xr-panel-body">' +
-      XrPanel.buildFavSection() +
-      XrPanel.buildRecentSection() +
-      XrPanel.buildCategories("") +
-      "</div>";
+      '<div class="xr-tab-bar">' +
+      _xrTabs.map((t, i) =>
+        `<button class="xr-tab-btn${i === 0 ? " active" : ""}" data-tab="${t.id}">${t.icon}${t.label}</button>`
+      ).join("") +
+      "</div>" +
+      '<div class="xr-panel-body"></div>';
 
     wrap.appendChild(panel);
     document.body.appendChild(fab);
     document.body.appendChild(wrap);
 
     positionPanel(fab, wrap);
+
+    async function renderBody() {
+      const body = panel.querySelector(".xr-panel-body");
+      const q = (panel.querySelector(".xr-search-box").value || "").trim();
+      if (_xrActiveTab === "commands") {
+        body.innerHTML = XrPanel.buildFavSection() + XrPanel.buildRecentSection() + XrPanel.buildCategories(q);
+        bindCmdClicks(body);
+      } else if (_xrActiveTab === "items") {
+        body.innerHTML = '<div class="xr-loading">加载中...</div>';
+        try {
+          const html = await XrItems.renderItemTab(q);
+          body.innerHTML = html;
+          XrItems.bindItemClicks(body);
+        } catch (e) {
+          body.innerHTML = '<div class="xr-loading">加载失败</div>';
+        }
+      }
+    }
 
     // Toggle
     fab.addEventListener("click", (e) => {
@@ -267,9 +291,8 @@
     // Search
     const searchBox = panel.querySelector(".xr-search-box");
     searchBox.addEventListener("input", debounce(() => {
-      const body = panel.querySelector(".xr-panel-body");
-      body.innerHTML = XrPanel.buildFavSection() + XrPanel.buildRecentSection() + XrPanel.buildCategories(searchBox.value.trim());
-      bindCmdClicks(body);
+      searchBox.placeholder = _xrActiveTab === "items" ? "搜索物品..." : "搜索命令...";
+      renderBody();
     }, 120));
 
     // Category toggle
@@ -299,10 +322,26 @@
     const expandBtn = panel.querySelector("#xr-expand-btn");
     expandBtn.addEventListener("click", (e) => {
       e.stopPropagation();
+      if (_xrActiveTab !== "commands") return;
       _xrAllExpanded = !_xrAllExpanded;
-      expandBtn.textContent = _xrAllExpanded ? "⤡" : "⤢";
+      expandBtn.textContent = _xrAllExpanded ? "⊟" : "⊞";
       panel.querySelectorAll(".xr-category").forEach((cat) => {
         cat.classList.toggle("xr-expanded", _xrAllExpanded);
+      });
+    });
+
+    // Tab switching
+    panel.querySelectorAll(".xr-tab-btn").forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const tabId = btn.dataset.tab;
+        if (tabId === _xrActiveTab) return;
+        _xrActiveTab = tabId;
+        panel.querySelectorAll(".xr-tab-btn").forEach(b => b.classList.toggle("active", b.dataset.tab === tabId));
+        const sb = panel.querySelector(".xr-search-box");
+        sb.value = "";
+        sb.placeholder = tabId === "items" ? "搜索物品..." : "搜索命令...";
+        renderBody();
       });
     });
 
@@ -328,8 +367,8 @@
       }
     });
 
-    // Command clicks
-    bindCmdClicks(panel);
+    // Initial render
+    renderBody();
 
     // Drag
     enableDrag(fab, wrap);

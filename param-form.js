@@ -137,7 +137,11 @@
           '<div class="xr-form-group">' +
           `<label class="xr-form-label">${escapeHtml(t.name)}</label>` +
           `<div class="xr-pf-opts" id="${id}">${optsHtml}</div>` +
+          `<div class="xr-pf-custom-row">` +
+          `<input class="xr-form-input" id="${id}-custom" placeholder="自定义输入（留空使用上方选项）" />` +
+          `</div>` +
           "</div>";
+        fieldIds.push(id + "-custom");
       } else if (t.type === "mention") {
         formHtml +=
           '<div class="xr-form-group">' +
@@ -209,10 +213,17 @@
             showToast("请填写完整参数", 1500);
           }
         } else if (t.type === "choice") {
-          const sel = document.querySelector(`input[name="pf-${i}"]:checked`);
-          if (sel) {
+          const customEl = document.getElementById("xr-pf-" + i + "-custom");
+          const customVal = customEl ? customEl.value.trim() : "";
+          if (customVal) {
             const hasBrackets = t.raw.indexOf("<") === 0;
-            values.push({ name: t.name, value: sel.value, raw: t.raw, noBrackets: !hasBrackets });
+            values.push({ name: t.name, value: customVal, raw: t.raw, noBrackets: !hasBrackets });
+          } else {
+            const sel = document.querySelector(`input[name="pf-${i}"]:checked`);
+            if (sel) {
+              const hasBrackets = t.raw.indexOf("<") === 0;
+              values.push({ name: t.name, value: sel.value, raw: t.raw, noBrackets: !hasBrackets });
+            }
           }
         } else {
           const el = document.getElementById("xr-pf-" + i);

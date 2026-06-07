@@ -858,3 +858,73 @@
   flex-shrink: 0;
   font-family: "SF Mono", "Fira Code", "Consolas", monospace;
 }
+
+/* ========== Tab Bar ========== */
+.xr-tab-bar {
+  display: flex;
+  gap: 2px;
+  padding: 6px 12px 0;
+  border-bottom: 1px solid var(--xr-border);
+  flex-shrink: 0;
+}
+
+.xr-tab-btn {
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--xr-text-muted);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--xr-transition);
+  font-family: inherit;
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.xr-tab-btn:hover {
+  color: var(--xr-text-secondary);
+  background: var(--xr-hover-bg);
+}
+
+.xr-tab-btn.active {
+  color: var(--xr-accent);
+  border-bottom-color: var(--xr-accent);
+  background: var(--xr-accent-dim);
+}
+
+/* ========== Param Form: Custom Input ========== */
+.xr-pf-custom-row {
+  margin-top: 6px;
+}
+
+.xr-pf-custom-row .xr-form-input {
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+/* ========== Items Tab ========== */
+.xr-loading {
+  padding: 40px 16px;
+  text-align: center;
+  color: var(--xr-text-muted);
+  font-size: 13px;
+}
+
+.xr-item-name {
+  flex: 1;
+  font-size: 13px;
+  color: var(--xr-text);
+}
+
+.xr-item-type-badge {
+  font-size: 10px;
+  color: var(--xr-text-muted);
+  background: var(--xr-chip-bg);
+  border: 1px solid var(--xr-chip-border);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
