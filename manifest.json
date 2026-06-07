@@ -10,7 +10,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://web.telegram.org/k/*"],
+      "matches": ["https://web.telegram.org/*"],
       "js": ["commands.js", "storage.js", "panel-ui.js", "param-form.js", "editor.js", "autocomplete.js", "items.js", "content.js"],
       "css": ["content.css"],
       "run_at": "document_idle"
@@ -20,7 +20,7 @@
   "web_accessible_resources": [
     {
       "resources": ["data/items/*"],
-      "matches": ["*://web.telegram.org/k/*"]
+      "matches": ["https://web.telegram.org/*"]
     }
   ]
 }
