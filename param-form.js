@@ -165,6 +165,12 @@
       "</div>" +
       '<div class="xr-modal-body">' +
       formHtml +
+      '<div class="xr-pf-save-row">' +
+      '<label class="xr-pf-save-label">' +
+      '<input type="checkbox" id="xr-pf-save-quick" />' +
+      ' 保存为常用命令' +
+      '</label>' +
+      '</div>' +
       "</div>" +
       '<div class="xr-modal-footer">' +
       '<button class="xr-btn xr-btn-ghost" id="xr-pf-cancel">取消</button>' +
@@ -188,6 +194,36 @@
         }
       });
     }
+
+    // ─── Items DB autocomplete for matching params ──────────────
+    (function setupItemAutocomplete() {
+      const items = XrItems.getCachedItems();
+      if (!items) {
+        XrItems.loadItems().then(() => setupItemAutocomplete());
+        return;
+      }
+      for (let i = 0; i < tokens.length; i++) {
+        const t = tokens[i];
+        if (t.type !== "input" && t.type !== "quantity") continue;
+        const itemType = XrItems.getItemTypeForParam(t.name);
+        if (itemType === undefined) continue;
+        const listId = "xr-items-dl-" + i;
+        const input = document.getElementById("xr-pf-" + i);
+        if (!input) continue;
+        input.setAttribute("list", listId);
+        const matched = itemType === null
+          ? items
+          : items.filter((it) => it.type === itemType);
+        let optsHtml = "";
+        for (const it of matched) {
+          optsHtml += `<option value="${escapeHtml(it.name)}">${escapeHtml(it.name)}</option>`;
+        }
+        const dl = document.createElement("datalist");
+        dl.id = listId;
+        dl.innerHTML = optsHtml;
+        input.parentNode.appendChild(dl);
+      }
+    })();
 
     function close() {
       overlay.remove();
@@ -235,7 +271,10 @@
         } else {
           const el = document.getElementById("xr-pf-" + i);
           const val = el ? el.value.trim() : "";
-          if (val) {
+          if (t.raw && t.raw.indexOf("[") === 0) {
+            // Optional [...] param: allow empty, replace via raw
+            values.push({ name: t.name, value: val, raw: t.raw, noBrackets: true });
+          } else if (val) {
             values.push({ name: t.name, value: val });
           } else {
             valid = false;
@@ -253,6 +292,12 @@
         XrStorage.addRecent({ cmd: cmdObj.cmd, params: cmdObj.params, desc: cmdObj.desc || "" });
         document.querySelector(".xr-panel-wrap")?.classList.remove("xr-open");
         showToast(`已填入: ${cmdObj.cmd}`);
+        // Save as quick command if checked
+        const saveQ = document.getElementById("xr-pf-save-quick");
+        if (saveQ && saveQ.checked && fullCmd !== cmdObj.cmd) {
+          const label = prompt("命名此常用命令：", cmdObj.cmd);
+          if (label) XrStorage.addQuickCommand(label, fullCmd);
+        }
         // Save param memory
         const fieldValues = {};
         for (let i = 0; i < tokens.length; i++) {

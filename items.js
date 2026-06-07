@@ -32,9 +32,44 @@
       });
   }
 
+  function getCachedItems() {
+    return _cache;
+  }
+
+  function queryItems(typeFilter, query) {
+    if (!_cache) return [];
+    const q = (query || "").toLowerCase();
+    return _cache.filter((item) => {
+      if (typeFilter && item.type !== typeFilter) return false;
+      if (q && !item.name.toLowerCase().includes(q)) return false;
+      return true;
+    });
+  }
+
   function matchItem(item, q) {
     if (!q) return true;
     return item.name.toLowerCase().includes(q);
+  }
+
+  // Param name → item type mapping for autocomplete
+  const PARAM_ITEM_MAP = {
+    "丹药名": "elixir",
+    "法宝": "treasure",
+    "法宝名": "treasure",
+    "物品": null,
+    "物品名": null,
+    "材料名": "material",
+    "阵法": "formation",
+    "阵法名": "formation",
+    "徽章": "badge",
+    "徽章名": "badge",
+  };
+
+  function getItemTypeForParam(paramName) {
+    for (const key of Object.keys(PARAM_ITEM_MAP)) {
+      if (paramName.indexOf(key) !== -1) return PARAM_ITEM_MAP[key];
+    }
+    return undefined;
   }
 
   function buildItemHtml(item) {
@@ -44,6 +79,7 @@
       '<div class="xr-cmd-row">' +
       `<span class="xr-item-type-badge">${meta.icon}</span>` +
       `<span class="xr-item-name">${XrUtils.escapeHtml(item.name)}</span>` +
+      '<span class="xr-item-copy" title="复制到剪贴板">📋</span>' +
       "</div>" +
       "</div>"
     );
@@ -97,11 +133,20 @@
 
   function bindItemClicks(container) {
     container.querySelectorAll(".xr-cmd-item[data-item-name]").forEach((item) => {
-      item.addEventListener("click", () => {
+      item.addEventListener("click", (e) => {
+        if (e.target.closest(".xr-item-copy")) {
+          const name = item.dataset.itemName;
+          navigator.clipboard.writeText(name).then(() => {
+            XrUtils.showToast("已复制: " + name, 1200);
+          }).catch(() => {
+            XrUtils.showToast("复制失败", 1500);
+          });
+          return;
+        }
         const name = item.dataset.itemName;
-        const success = XrUtils.setInputText(name);
+        const success = XrUtils.appendInputText(name);
         if (success) {
-          document.querySelector(".xr-panel-wrap").classList.remove("xr-open");
+          if (XrCore.shouldAutoClose()) XrCore.closePanel();
           XrUtils.showToast("已填入: " + name);
         } else {
           XrUtils.showToast("未找到输入框，请先打开聊天", 2000);
@@ -111,7 +156,7 @@
   }
 
   window.XrItems = {
-    loadItems,
+    loadItems, getCachedItems, queryItems, getItemTypeForParam,
     renderItemTab,
     bindItemClicks,
   };

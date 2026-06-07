@@ -153,6 +153,75 @@
     return all;
   }
 
+  // ─── Settings ────────────────────────────────────────────────
+
+  const SETTINGS_KEY = "xr_settings";
+
+  function getSetting(key, defaultVal) {
+    try {
+      const all = JSON.parse(localStorage.getItem(SETTINGS_KEY)) || {};
+      return all[key] !== undefined ? all[key] : defaultVal;
+    } catch {
+      return defaultVal;
+    }
+  }
+
+  function setSetting(key, val) {
+    try {
+      const all = JSON.parse(localStorage.getItem(SETTINGS_KEY)) || {};
+      all[key] = val;
+      localStorage.setItem(SETTINGS_KEY, JSON.stringify(all));
+    } catch { /* ignore */ }
+  }
+
+  // ─── Panel Size Presets ──────────────────────────────────────
+
+  const PANEL_PRESETS = {
+    small:  { label: "小",  w: 360, h: 440 },
+    medium: { label: "中",  w: 420, h: 520 },
+    large:  { label: "大",  w: 500, h: 600 },
+    xlarge: { label: "特大", w: 560, h: 680 },
+  };
+
+  function getPanelPreset() {
+    const key = getSetting("panel_preset", "medium");
+    return PANEL_PRESETS[key] || PANEL_PRESETS.medium;
+  }
+
+  function setPanelPreset(key) {
+    if (PANEL_PRESETS[key]) {
+      setSetting("panel_preset", key);
+    }
+  }
+
+  // ─── Quick Commands (presets) ───────────────────────────────
+
+  const QUICK_KEY = "xr_quick_cmds";
+  const MAX_QUICK = 20;
+
+  function getQuickCommands() {
+    try {
+      return JSON.parse(localStorage.getItem(QUICK_KEY)) || [];
+    } catch {
+      return [];
+    }
+  }
+
+  function addQuickCommand(label, fullText) {
+    const cmds = getQuickCommands();
+    cmds.unshift({ label: label.slice(0, 30), fullText });
+    if (cmds.length > MAX_QUICK) cmds.pop();
+    localStorage.setItem(QUICK_KEY, JSON.stringify(cmds));
+  }
+
+  function removeQuickCommand(index) {
+    const cmds = getQuickCommands();
+    if (index >= 0 && index < cmds.length) {
+      cmds.splice(index, 1);
+      localStorage.setItem(QUICK_KEY, JSON.stringify(cmds));
+    }
+  }
+
   window.XrStorage = {
     getTheme, setTheme, toggleTheme,
     getRecent, addRecent,
@@ -160,6 +229,9 @@
     addCustomCommand, updateCustomCommand, deleteCustomCommand,
     getCustomCategories, saveCustomCategories,
     getFavorites, toggleFavorite, isFavorite,
-    getMergedCategories, getAllCommands
+    getMergedCategories, getAllCommands,
+    getSetting, setSetting,
+    PANEL_PRESETS, getPanelPreset, setPanelPreset,
+    getQuickCommands, addQuickCommand, removeQuickCommand
   };
 })();

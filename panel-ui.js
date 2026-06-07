@@ -48,6 +48,29 @@
     );
   }
 
+  // ─── Build section: Quick Commands ─────────────────────────
+
+  function buildQuickSection() {
+    const quickCmds = XrStorage.getQuickCommands();
+    if (quickCmds.length === 0) return "";
+    const items = quickCmds.map((qc, idx) =>
+      '<div class="xr-cmd-item xr-quick-item" data-qidx="' + idx +
+      '" data-full="' + XrUtils.escapeHtml(qc.fullText) + '">' +
+      '<div class="xr-cmd-row">' +
+      '<span class="xr-cmd-name">' + XrUtils.escapeHtml(qc.label) + '</span>' +
+      '<span class="xr-cmd-desc">' + XrUtils.escapeHtml(qc.fullText) + '</span>' +
+      '<span class="xr-quick-del" title="删除">✕</span>' +
+      "</div>" +
+      "</div>"
+    ).join("");
+    return (
+      '<div class="xr-quick-section">' +
+      '<div class="xr-recent-title">📌 常用命令</div>' +
+      items +
+      "</div>"
+    );
+  }
+
   // ─── Build section: Favorites ────────────────────────────────
 
   function buildFavSection() {
@@ -111,18 +134,14 @@
   // ─── Refresh panel ───────────────────────────────────────────
 
   function refreshPanel() {
-    const panel = document.querySelector(".xr-panel");
-    if (!panel) return;
-    const searchBox = panel.querySelector(".xr-search-box");
-    const body = panel.querySelector(".xr-panel-body");
-    const q = searchBox ? searchBox.value.trim() : "";
-    body.innerHTML = buildFavSection() + buildRecentSection() + buildCategories(q);
-    XrCore.bindCmdClicks(body);
+    if (window.XrCore && XrCore.renderPanel) {
+      XrCore.renderPanel();
+    }
   }
 
   window.XrPanel = {
     matchCmd, buildCmdItem,
-    buildFavSection, buildRecentSection, buildCategories,
+    buildQuickSection, buildFavSection, buildRecentSection, buildCategories,
     refreshPanel
   };
 })();
