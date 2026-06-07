@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "修仙命令面板",
+  "version": "1.0.0",
+  "description": "Telegram 修仙游戏 Bot 快捷命令面板 — 200+ 命令，分类搜索、一键填入",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://web.telegram.org/k/*"],
+      "js": ["commands.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["storage"]
+}
