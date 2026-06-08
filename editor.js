@@ -78,7 +78,8 @@
 
     document.body.appendChild(overlay);
 
-    function close() {
+    function close(e) {
+      if (e) e.stopPropagation();
       overlay.remove();
       XrPanel.refreshPanel();
     }
@@ -86,10 +87,10 @@
     overlay.querySelector(".xr-modal-close").addEventListener("click", close);
     overlay.querySelector("#xr-editor-cancel").addEventListener("click", close);
     overlay.addEventListener("click", (e) => {
-      if (e.target === overlay) close();
+      if (e.target === overlay) close(e);
     });
 
-    overlay.querySelector("#xr-editor-save").addEventListener("click", () => {
+    overlay.querySelector("#xr-editor-save").addEventListener("click", (e) => {
       const cmd = document.getElementById("xr-editor-cmd").value.trim();
       if (!cmd || cmd.indexOf(".") !== 0) {
         showToast("请输入以 . 开头的命令", 2000);
@@ -131,16 +132,16 @@
         XrStorage.addCustomCommand(cmdData);
         showToast("命令已添加");
       }
-      close();
+      close(e);
     });
 
     const deleteBtn = overlay.querySelector("#xr-editor-delete");
     if (deleteBtn) {
-      deleteBtn.addEventListener("click", () => {
+      deleteBtn.addEventListener("click", (e) => {
         if (confirm("确定删除此命令？")) {
           XrStorage.deleteCustomCommand(editing._id);
           showToast("命令已删除");
-          close();
+          close(e);
         }
       });
     }

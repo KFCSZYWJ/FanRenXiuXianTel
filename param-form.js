@@ -69,6 +69,7 @@
         result = result.replace(`<${v.name}>`, v.value);
       }
     }
+    result = result.replace(/<[^>]+>\*<[^>]+>/g, "");
     return result;
   }
 
@@ -170,6 +171,9 @@
       '<input type="checkbox" id="xr-pf-save-quick" />' +
       ' 保存为常用命令' +
       '</label>' +
+      '<div class="xr-pf-save-name-row" style="display:none">' +
+      '<input class="xr-form-input" id="xr-pf-save-name" placeholder="名称（可选，默认为命令名）" />' +
+      '</div>' +
       '</div>' +
       "</div>" +
       '<div class="xr-modal-footer">' +
@@ -225,20 +229,71 @@
       }
     })();
 
-    function close() {
+    function close(e) {
+      if (e) e.stopPropagation();
       overlay.remove();
     }
 
     overlay.querySelector(".xr-modal-close").addEventListener("click", close);
     overlay.querySelector("#xr-pf-cancel").addEventListener("click", close);
     overlay.addEventListener("click", (e) => {
-      if (e.target === overlay) close();
+      if (e.target === overlay) close(e);
     });
 
-    overlay.querySelector("#xr-pf-confirm").addEventListener("click", () => {
-      const values = [];
-      let valid = true;
+    // Show/hide save name input on checkbox change, save immediately
+    const saveCb = overlay.querySelector("#xr-pf-save-quick");
+    if (saveCb) {
+      saveCb.addEventListener("change", function () {
+        const nr = document.getElementById("xr-pf-save-name-row");
+        if (nr) nr.style.display = this.checked ? "" : "none";
 
+        if (this.checked) {
+          // Collect current form values and save immediately
+          const vals = [];
+          for (let i = 0; i < tokens.length; i++) {
+            const t = tokens[i];
+            if (t.type === "static") continue;
+            let el, val, count;
+            if (t.type === "quantity") {
+              el = document.getElementById("xr-pf-" + i);
+              const cntEl = document.getElementById("xr-pf-" + i + "-count");
+              val = el ? el.value.trim() : "";
+              count = cntEl ? cntEl.value.trim() : "";
+              if (val && count) vals.push({ name: t.name, value: val, countLabel: t.countLabel, count });
+            } else if (t.type === "choice") {
+              const custom = document.getElementById("xr-pf-" + i + "-custom");
+              const customVal = custom ? custom.value.trim() : "";
+              if (customVal) {
+                vals.push({ name: t.name, value: customVal, raw: t.raw, noBrackets: t.raw.indexOf("<") !== 0 });
+              } else {
+                el = document.getElementById("xr-pf-" + i);
+                if (el && el.value) vals.push({ name: t.name, value: el.value, raw: t.raw, noBrackets: t.raw.indexOf("<") !== 0 });
+              }
+            } else {
+              el = document.getElementById("xr-pf-" + i);
+              val = el ? el.value.trim() : "";
+              if (t.raw && t.raw.indexOf("[") === 0) {
+                vals.push({ name: t.name, value: val, raw: t.raw, noBrackets: true });
+              } else if (val) {
+                vals.push({ name: t.name, value: val });
+              }
+            }
+          }
+          const filled = fillParams(cmdObj.params, vals);
+          const full = cmdObj.cmd + filled;
+          try {
+            XrStorage.addQuickCommand(cmdObj.cmd, full);
+            showToast("已保存常用命令：" + cmdObj.cmd, 2000);
+          } catch (e) {
+            showToast("保存失败", 2000);
+          }
+        }
+      });
+    }
+
+    const confirmBtn = overlay.querySelector("#xr-pf-confirm");
+    confirmBtn.addEventListener("click", function () {
+      const values = [];
       for (let i = 0; i < tokens.length; i++) {
         const t = tokens[i];
         if (t.type === "static") continue;
@@ -248,56 +303,40 @@
           const count = document.getElementById("xr-pf-" + i + "-count").value.trim();
           if (val && count) {
             values.push({ name: t.name, value: val, countLabel: t.countLabel, count: count });
-          } else {
-            valid = false;
-            showToast("请填写完整参数", 1500);
           }
         } else if (t.type === "choice") {
           const customEl = document.getElementById("xr-pf-" + i + "-custom");
           const customVal = customEl ? customEl.value.trim() : "";
           if (customVal) {
-            const hasBrackets = t.raw.indexOf("<") === 0;
-            values.push({ name: t.name, value: customVal, raw: t.raw, noBrackets: !hasBrackets });
+            values.push({ name: t.name, value: customVal, raw: t.raw, noBrackets: t.raw.indexOf("<") !== 0 });
           } else {
             const sel = document.getElementById("xr-pf-" + i);
-            if (sel && sel.value) {
-              const hasBrackets = t.raw.indexOf("<") === 0;
-              values.push({ name: t.name, value: sel.value, raw: t.raw, noBrackets: !hasBrackets });
-            } else {
-              valid = false;
-              showToast("请选择一个选项或输入自定义值", 1500);
-            }
+            const selVal = sel ? sel.value : "";
+            values.push({ name: t.name, value: selVal, raw: t.raw, noBrackets: t.raw.indexOf("<") !== 0 });
           }
+        } else if (t.type === "mention") {
+          const el = document.getElementById("xr-pf-" + i);
+          const val = el ? el.value.trim() : "";
+          values.push({ name: t.name, value: val, raw: t.raw, noBrackets: true });
         } else {
           const el = document.getElementById("xr-pf-" + i);
           const val = el ? el.value.trim() : "";
           if (t.raw && t.raw.indexOf("[") === 0) {
-            // Optional [...] param: allow empty, replace via raw
             values.push({ name: t.name, value: val, raw: t.raw, noBrackets: true });
-          } else if (val) {
-            values.push({ name: t.name, value: val });
           } else {
-            valid = false;
-            showToast("请填写完整参数", 1500);
+            values.push({ name: t.name, value: val });
           }
         }
       }
 
-      if (!valid) return;
-
       const filledParams = fillParams(cmdObj.params, values);
+      const hasContent = filledParams.trim().length > 0;
       const fullCmd = cmdObj.cmd + filledParams;
       const success = setInputText(fullCmd);
       if (success) {
-        XrStorage.addRecent({ cmd: cmdObj.cmd, params: cmdObj.params, desc: cmdObj.desc || "" });
-        document.querySelector(".xr-panel-wrap")?.classList.remove("xr-open");
+        XrStorage.addRecent({ cmd: cmdObj.cmd, params: hasContent ? cmdObj.params : "", desc: cmdObj.desc || "" });
         showToast(`已填入: ${cmdObj.cmd}`);
-        // Save as quick command if checked
-        const saveQ = document.getElementById("xr-pf-save-quick");
-        if (saveQ && saveQ.checked && fullCmd !== cmdObj.cmd) {
-          const label = prompt("命名此常用命令：", cmdObj.cmd);
-          if (label) XrStorage.addQuickCommand(label, fullCmd);
-        }
+        if (XrCore.shouldAutoClose()) XrCore.closePanel();
         // Save param memory
         const fieldValues = {};
         for (let i = 0; i < tokens.length; i++) {

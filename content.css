@@ -1082,6 +1082,11 @@
   cursor: pointer;
 }
 
+/* Param form save name input */
+.xr-pf-save-name-row {
+  margin-top: 6px;
+}
+
 /* ========== Items Tab ========== */
 .xr-loading {
   padding: 40px 16px;
