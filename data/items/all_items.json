@@ -1,0 +1,1427 @@
+[
+    {
+        "item_id": "item_linuxdo_account_assessment_ticket",
+        "name": "LinuxDo\u8d26\u53f7\u8bc4\u4f30\u5238",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "seed_105",
+        "name": "\u4e00\u5c0f\u6bb5\u517b\u9b42\u6728\u6839\u90e8",
+        "type": "seed"
+    },
+    {
+        "item_id": "seed_104",
+        "name": "\u4e00\u5c0f\u8282\u5929\u96f7\u7af9\u6839\u90e8",
+        "type": "seed"
+    },
+    {
+        "item_id": "mat_403",
+        "name": "\u4e00\u622a\u7075\u773c\u4e4b\u6811",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_styx_sand",
+        "name": "\u4e00\u6367\u5fd8\u5ddd\u4e4b\u6c99",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_hongmeng_qi",
+        "name": "\u4e00\u7f15\u9e3f\u8499\u7d2b\u6c14",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_102",
+        "name": "\u4e00\u9636\u5996\u4e39",
+        "type": "material"
+    },
+    {
+        "item_id": "treasure_seven_flame_fan",
+        "name": "\u4e03\u7130\u6247",
+        "type": "treasure"
+    },
+    {
+        "item_id": "recipe_seven_flame_fan",
+        "name": "\u4e03\u7130\u6247\u56fe\u7eb8",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_301_w",
+        "name": "\u4e07\u5e74\u517b\u9b42\u6728",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_204_w",
+        "name": "\u4e07\u5e74\u5929\u96f7\u7af9",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_wan_nian_ling_ru",
+        "name": "\u4e07\u5e74\u7075\u4e73",
+        "type": "material"
+    },
+    {
+        "item_id": "form_101",
+        "name": "\u4e09\u624d\u5fae\u5c18\u9635",
+        "type": "formation"
+    },
+    {
+        "item_id": "recipe_form_101",
+        "name": "\u4e09\u624d\u5fae\u5c18\u9635\u56fe\u7eb8",
+        "type": "recipe"
+    },
+    {
+        "item_id": "treasure_trifle_fan",
+        "name": "\u4e09\u7130\u6247",
+        "type": "treasure"
+    },
+    {
+        "item_id": "recipe_trifle_fan",
+        "name": "\u4e09\u7130\u6247\u56fe\u7eb8",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_302",
+        "name": "\u4e09\u7ea7\u5996\u4e39",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_feather_crow",
+        "name": "\u4e09\u8db3\u4e4c\u7fce",
+        "type": "material"
+    },
+    {
+        "item_id": "elixir_303",
+        "name": "\u4e09\u8f6c\u91cd\u5143\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_303",
+        "name": "\u4e09\u8f6c\u91cd\u5143\u4e39\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_buzhou_stone",
+        "name": "\u4e0d\u5468\u5c71\u4e4b\u77f3",
+        "type": "material"
+    },
+    {
+        "item_id": "elixir_bds_001",
+        "name": "\u4e39\u9b54\u5fc3\u8403",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_bds_001",
+        "name": "\u4e39\u9b54\u5fc3\u8403\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "treasure_102",
+        "name": "\u4e4c\u9f99\u5e61",
+        "type": "treasure"
+    },
+    {
+        "item_id": "recipe_103",
+        "name": "\u4e4c\u9f99\u5e61\u56fe\u7eb8",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_xirang",
+        "name": "\u4e5d\u5929\u606f\u58e4",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_502",
+        "name": "\u4e5d\u5929\u795e\u96f7\u6728",
+        "type": "material"
+    },
+    {
+        "item_id": "elixir_401",
+        "name": "\u4e5d\u66f2\u7075\u53c2\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_401",
+        "name": "\u4e5d\u66f2\u7075\u53c2\u4e39\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "elixir_501",
+        "name": "\u4e5d\u8f6c\u51dd\u9b42\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_501",
+        "name": "\u4e5d\u8f6c\u51dd\u9b42\u4e39\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "elixir_hfg_001",
+        "name": "\u4e5d\u8f6c\u89e3\u5384\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_hfg_001",
+        "name": "\u4e5d\u8f6c\u89e3\u5384\u4e39\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "elixir_901_revive",
+        "name": "\u4e5d\u8f6c\u8fd8\u9b42\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "badge_manhuzi_body",
+        "name": "\u4e71\u661f\u6d77\u70bc\u4f53\u7b2c\u4e00\u4eba",
+        "type": "badge"
+    },
+    {
+        "item_id": "item_stock_permit",
+        "name": "\u4e7e\u5764\u8d22\u6c14\u5f15",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "treasure_xt_013",
+        "name": "\u4e7e\u84dd\u51b0\u7130",
+        "type": "treasure"
+    },
+    {
+        "item_id": "mat_205",
+        "name": "\u4e8c\u7ea7\u5996\u4e39",
+        "type": "material"
+    },
+    {
+        "item_id": "blueprint_puppet_wuxing",
+        "name": "\u4e94\u884c\u7075\u5080\u56fe\u8c31",
+        "type": "recipe"
+    },
+    {
+        "item_id": "form_301",
+        "name": "\u4e94\u884c\u98a0\u5012\u9635",
+        "type": "formation"
+    },
+    {
+        "item_id": "recipe_form_301",
+        "name": "\u4e94\u884c\u98a0\u5012\u9635\u56fe\u7eb8",
+        "type": "recipe"
+    },
+    {
+        "item_id": "badge_qyz_alliance",
+        "name": "\u4f10\u4ed9\u540c\u76df",
+        "type": "badge"
+    },
+    {
+        "item_id": "treasure_401",
+        "name": "\u4f51\u5929\u795e\u76fe",
+        "type": "treasure"
+    },
+    {
+        "item_id": "recipe_401_new",
+        "name": "\u4f51\u5929\u795e\u76fe\u56fe\u7eb8",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_puppet_core",
+        "name": "\u5080\u5121\u6838\u5fc3",
+        "type": "material"
+    },
+    {
+        "item_id": "treasure_xt_011",
+        "name": "\u5143\u5408\u4e94\u6781\u5c71",
+        "type": "treasure"
+    },
+    {
+        "item_id": "quest_item_ycs_d",
+        "name": "\u5143\u78c1\u5c71\u6838\u00b7\u4e01",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_ycs_c",
+        "name": "\u5143\u78c1\u5c71\u6838\u00b7\u4e19",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_ycs_b",
+        "name": "\u5143\u78c1\u5c71\u6838\u00b7\u4e59",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_ycs_a",
+        "name": "\u5143\u78c1\u5c71\u6838\u00b7\u7532",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "treasure_xt_003",
+        "name": "\u5143\u78c1\u795e\u5c71",
+        "type": "treasure"
+    },
+    {
+        "item_id": "item_self_unreport_token",
+        "name": "\u517b\u5ec9\u94f6",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "mat_301",
+        "name": "\u517b\u9b42\u6728",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_303",
+        "name": "\u517b\u9b42\u6728",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_feather_ice_phoenix",
+        "name": "\u51b0\u51e4\u4e4b\u7fce",
+        "type": "material"
+    },
+    {
+        "item_id": "elixir_trial_detox",
+        "name": "\u51c0\u9ad3\u9732",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_trial_detox",
+        "name": "\u51c0\u9ad3\u9732\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "elixir_002",
+        "name": "\u51dd\u6c14\u6563",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_002",
+        "name": "\u51dd\u6c14\u6563\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "elixir_trial_focus",
+        "name": "\u51dd\u795e\u9732",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_trial_focus",
+        "name": "\u51dd\u795e\u9732\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_101",
+        "name": "\u51dd\u8840\u8349",
+        "type": "material"
+    },
+    {
+        "item_id": "seed_101",
+        "name": "\u51dd\u8840\u8349\u79cd\u5b50",
+        "type": "seed"
+    },
+    {
+        "item_id": "elixir_302",
+        "name": "\u51dd\u9b42\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_302",
+        "name": "\u51dd\u9b42\u4e39\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "treasure_xt_007",
+        "name": "\u5317\u6781\u5143\u6676\u5c71",
+        "type": "treasure"
+    },
+    {
+        "item_id": "mat_dayan_qianji_slip",
+        "name": "\u5343\u673a\u7389\u7b80",
+        "type": "material"
+    },
+    {
+        "item_id": "quest_item_003",
+        "name": "\u5357\u5bab\u5a49\u7684\u4fe1\u7269",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "mat_zhuimo_heart",
+        "name": "\u53e4\u9b54\u5fc3\u6838",
+        "type": "material"
+    },
+    {
+        "item_id": "elixir_hh_001",
+        "name": "\u5408\u6b22\u6563",
+        "type": "elixir"
+    },
+    {
+        "item_id": "elixir_004",
+        "name": "\u5408\u6c14\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_004",
+        "name": "\u5408\u6c14\u4e39\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "badge_xianyu_ghost",
+        "name": "\u54b8\u9c7c\u7684\u6b8b\u9b42",
+        "type": "badge"
+    },
+    {
+        "item_id": "treasure_xt_005",
+        "name": "\u557c\u9b42\u517d\u5996\u6838",
+        "type": "treasure"
+    },
+    {
+        "item_id": "quest_item_ths_d",
+        "name": "\u557c\u9b42\u5996\u6838\u788e\u7247\u00b7\u4e01",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_ths_c",
+        "name": "\u557c\u9b42\u5996\u6838\u788e\u7247\u00b7\u4e19",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_ths_b",
+        "name": "\u557c\u9b42\u5996\u6838\u788e\u7247\u00b7\u4e59",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_ths_a",
+        "name": "\u557c\u9b42\u5996\u6838\u788e\u7247\u00b7\u7532",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "mat_404",
+        "name": "\u56db\u7ea7\u5996\u4e39",
+        "type": "material"
+    },
+    {
+        "item_id": "form_201",
+        "name": "\u56db\u8c61\u5fa1\u6cd5\u9635",
+        "type": "formation"
+    },
+    {
+        "item_id": "recipe_form_201",
+        "name": "\u56db\u8c61\u5fa1\u6cd5\u9635\u56fe\u7eb8",
+        "type": "recipe"
+    },
+    {
+        "item_id": "elixir_005",
+        "name": "\u56de\u7075\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "quest_item_zhuimo_token",
+        "name": "\u5760\u9b54\u8c37\u7981\u5236\u4ee4",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "elixir_001",
+        "name": "\u589e\u5143\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_001",
+        "name": "\u589e\u5143\u4e39\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "treasure_xt_012",
+        "name": "\u5927\u4e94\u884c\u5e7b\u4e16\u8f6e",
+        "type": "treasure"
+    },
+    {
+        "item_id": "form_qyjj",
+        "name": "\u5927\u5e9a\u5251\u9635",
+        "type": "formation"
+    },
+    {
+        "item_id": "recipe_form_qyjj",
+        "name": "\u5927\u5e9a\u5251\u9635\u9635\u56fe",
+        "type": "recipe"
+    },
+    {
+        "item_id": "talisman_kunwu_teleport",
+        "name": "\u5927\u632a\u79fb\u4ee4",
+        "type": "talisman"
+    },
+    {
+        "item_id": "blueprint_puppet_dayan",
+        "name": "\u5927\u884d\u7075\u5080\u56fe\u8c31",
+        "type": "recipe"
+    },
+    {
+        "item_id": "quest_item_dayan_fragment_ningshi",
+        "name": "\u5927\u884d\u8bc0\u6b8b\u7bc7\u00b7\u51dd\u8bc6",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_dayan_fragment_fennian",
+        "name": "\u5927\u884d\u8bc0\u6b8b\u7bc7\u00b7\u5206\u5ff5",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_dayan_fragment_qianji",
+        "name": "\u5927\u884d\u8bc0\u6b8b\u7bc7\u00b7\u5343\u673a",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_dayan_fragment_kongkui",
+        "name": "\u5927\u884d\u8bc0\u6b8b\u7bc7\u00b7\u63a7\u5080",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_dayan_fragment_yanshen",
+        "name": "\u5927\u884d\u8bc0\u6b8b\u7bc7\u00b7\u884d\u795e",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "mat_401",
+        "name": "\u5929\u51e4\u4e4b\u7fce",
+        "type": "material"
+    },
+    {
+        "item_id": "badge_first_month",
+        "name": "\u5929\u5357\u7b2c\u4e00\u4fee\u58eb",
+        "type": "badge"
+    },
+    {
+        "item_id": "badge_nice_girl",
+        "name": "\u5929\u5357\u7b2c\u4e00\u7f8e\u5973",
+        "type": "badge"
+    },
+    {
+        "item_id": "elixir_301",
+        "name": "\u5929\u706b\u6db2",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_301",
+        "name": "\u5929\u706b\u6db2\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "red_packet_big",
+        "name": "\u5929\u9053\u5927\u7ea2\u5305",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "mat_204",
+        "name": "\u5929\u96f7\u7af9",
+        "type": "material"
+    },
+    {
+        "item_id": "treasure_xt_009",
+        "name": "\u592a\u4e59\u9752\u5c71",
+        "type": "treasure"
+    },
+    {
+        "item_id": "elixir_502",
+        "name": "\u592a\u865a\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_502",
+        "name": "\u592a\u865a\u4e39\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_503",
+        "name": "\u592a\u865a\u4ed9\u9732",
+        "type": "material"
+    },
+    {
+        "item_id": "item_custom_root_token",
+        "name": "\u593a\u5929\u9020\u5316\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "badge_shihuang_outfits",
+        "name": "\u59cb\u7687\u7684\u65b0\u8863",
+        "type": "badge"
+    },
+    {
+        "item_id": "badge_luoyun_cup",
+        "name": "\u5b8b\u7389\u4f7f\u7528\u8fc7\u7684\u8336\u676f",
+        "type": "badge"
+    },
+    {
+        "item_id": "badge_luoyun_ask",
+        "name": "\u5b8b\u7389\u5bf9\u4f60\u4ea7\u751f\u4e86\u7591\u95ee",
+        "type": "badge"
+    },
+    {
+        "item_id": "luoyun_item_03",
+        "name": "\u5b8b\u7389\u7684\u8336\u676f",
+        "type": "special_item"
+    },
+    {
+        "item_id": "luoyun_item_02",
+        "name": "\u5b8b\u7389\u7684\u8be2\u95ee",
+        "type": "special_item"
+    },
+    {
+        "item_id": "luoyun_item_01",
+        "name": "\u5b8b\u7389\u7684\u9753\u5f71",
+        "type": "special_item"
+    },
+    {
+        "item_id": "quest_item_002",
+        "name": "\u5b8c\u6574\u7684\u85cf\u5b9d\u56fe",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "item_trial_lockbox",
+        "name": "\u5c01\u7075\u5323",
+        "type": "special_tool"
+    },
+    {
+        "item_id": "merchant_item_02",
+        "name": "\u5c18\u5c01\u7684\u50a8\u7269\u888b",
+        "type": "loot_box"
+    },
+    {
+        "item_id": "mat_gengjin",
+        "name": "\u5e9a\u91d1",
+        "type": "material"
+    },
+    {
+        "item_id": "blueprint_puppet_shadow",
+        "name": "\u5f71\u5080\u56fe\u8c31",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_mulan_flame",
+        "name": "\u6155\u5170\u5723\u706f\u6b8b\u7130",
+        "type": "material"
+    },
+    {
+        "item_id": "elixir_trial_guard",
+        "name": "\u62a4\u8109\u6563",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_trial_guard",
+        "name": "\u62a4\u8109\u6563\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "treasure_xt_004",
+        "name": "\u638c\u5929\u74f6",
+        "type": "treasure"
+    },
+    {
+        "item_id": "quest_item_ztp_d",
+        "name": "\u638c\u5929\u74f6\u6b8b\u7247\u00b7\u4e01",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_ztp_c",
+        "name": "\u638c\u5929\u74f6\u6b8b\u7247\u00b7\u4e19",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_ztp_b",
+        "name": "\u638c\u5929\u74f6\u6b8b\u7247\u00b7\u4e59",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_ztp_a",
+        "name": "\u638c\u5929\u74f6\u6b8b\u7247\u00b7\u7532",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "merchant_item_01",
+        "name": "\u638c\u5929\u74f6\u7684\u4eff\u5236\u54c1",
+        "type": "special_tool"
+    },
+    {
+        "item_id": "item_zhan",
+        "name": "\u65a9",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_xtj_d",
+        "name": "\u65a9\u7075\u5251\u6b8b\u5203\u00b7\u4e01",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_xtj_c",
+        "name": "\u65a9\u7075\u5251\u6b8b\u5203\u00b7\u4e19",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_xtj_b",
+        "name": "\u65a9\u7075\u5251\u6b8b\u5203\u00b7\u4e59",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_xtj_a",
+        "name": "\u65a9\u7075\u5251\u6b8b\u5203\u00b7\u7532",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "badge_qyz_slayer",
+        "name": "\u65a9\u9752\u5143\u8005",
+        "type": "badge"
+    },
+    {
+        "item_id": "treasure_204",
+        "name": "\u65e7\u7d2b\u57ce\u515c\u6b8b\u80da",
+        "type": "treasure"
+    },
+    {
+        "item_id": "recipe_204",
+        "name": "\u65e7\u7d2b\u57ce\u515c\u6b8b\u8c31",
+        "type": "recipe"
+    },
+    {
+        "item_id": "quest_item_kunwu_pass",
+        "name": "\u6606\u543e\u901a\u884c\u4ee4",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "treasure_xt_008",
+        "name": "\u660a\u9634\u5bd2\u9b44\u5c71",
+        "type": "treasure"
+    },
+    {
+        "item_id": "item_rename_card",
+        "name": "\u6613\u540d\u7b26",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "badge_mid_autumn_2025",
+        "name": "\u6708\u6ee1\u5929\u5357",
+        "type": "badge"
+    },
+    {
+        "item_id": "blueprint_puppet_wood",
+        "name": "\u673a\u5173\u6728\u5080\u56fe\u8c31",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_puppet_frame",
+        "name": "\u673a\u5173\u9aa8\u67b6",
+        "type": "material"
+    },
+    {
+        "item_id": "badge_meining_air",
+        "name": "\u6885\u51dd\u7684\u7075\u6c14",
+        "type": "badge"
+    },
+    {
+        "item_id": "merchant_item_03",
+        "name": "\u6b8b\u7834\u7684\u53e4\u4f20\u9001\u9635\u76d8",
+        "type": "special_tool"
+    },
+    {
+        "item_id": "quest_item_cangkun_yinring",
+        "name": "\u6b8b\u7f3a\u9634\u73af",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "mat_law_crystal_tu",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u571f",
+        "type": "material"
+    },
+    {
+        "item_id": "recipe_law_crystal_tu",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u571f \u914d\u65b9",
+        "type": "recipe_internal"
+    },
+    {
+        "item_id": "mat_law_crystal_dark",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u6697",
+        "type": "material"
+    },
+    {
+        "item_id": "recipe_law_crystal_dark",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u6697 \u914d\u65b9",
+        "type": "recipe_internal"
+    },
+    {
+        "item_id": "mat_law_crystal_mu",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u6728",
+        "type": "material"
+    },
+    {
+        "item_id": "recipe_law_crystal_mu",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u6728 \u914d\u65b9",
+        "type": "recipe_internal"
+    },
+    {
+        "item_id": "mat_law_crystal_shui",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u6c34",
+        "type": "material"
+    },
+    {
+        "item_id": "recipe_law_crystal_shui",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u6c34 \u914d\u65b9",
+        "type": "recipe_internal"
+    },
+    {
+        "item_id": "mat_law_crystal_huo",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u706b",
+        "type": "material"
+    },
+    {
+        "item_id": "recipe_law_crystal_huo",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u706b \u914d\u65b9",
+        "type": "recipe_internal"
+    },
+    {
+        "item_id": "mat_law_crystal_space",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u7a7a\u95f4",
+        "type": "material"
+    },
+    {
+        "item_id": "recipe_law_crystal_space",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u7a7a\u95f4 \u914d\u65b9",
+        "type": "recipe_internal"
+    },
+    {
+        "item_id": "mat_law_crystal_jin",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u91d1",
+        "type": "material"
+    },
+    {
+        "item_id": "recipe_law_crystal_jin",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u91d1 \u914d\u65b9",
+        "type": "recipe_internal"
+    },
+    {
+        "item_id": "mat_law_crystal_lei",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u96f7",
+        "type": "material"
+    },
+    {
+        "item_id": "recipe_law_crystal_lei",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u96f7 \u914d\u65b9",
+        "type": "recipe_internal"
+    },
+    {
+        "item_id": "mat_law_crystal_feng",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u98ce",
+        "type": "material"
+    },
+    {
+        "item_id": "recipe_law_crystal_feng",
+        "name": "\u6cd5\u5219\u6e90\u6676\u00b7\u98ce \u914d\u65b9",
+        "type": "recipe_internal"
+    },
+    {
+        "item_id": "mat_dao_tu",
+        "name": "\u6cd5\u5219\u788e\u7247\u00b7\u571f",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "mat_dao_dark",
+        "name": "\u6cd5\u5219\u788e\u7247\u00b7\u6697",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "mat_dao_mu",
+        "name": "\u6cd5\u5219\u788e\u7247\u00b7\u6728",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "mat_dao_shui",
+        "name": "\u6cd5\u5219\u788e\u7247\u00b7\u6c34",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "mat_dao_huo",
+        "name": "\u6cd5\u5219\u788e\u7247\u00b7\u706b",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "mat_dao_space",
+        "name": "\u6cd5\u5219\u788e\u7247\u00b7\u7a7a\u95f4",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "mat_dao_jin",
+        "name": "\u6cd5\u5219\u788e\u7247\u00b7\u91d1",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "mat_dao_lei",
+        "name": "\u6cd5\u5219\u788e\u7247\u00b7\u96f7",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "mat_dao_feng",
+        "name": "\u6cd5\u5219\u788e\u7247\u00b7\u98ce",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "item_random_root",
+        "name": "\u6d17\u9ad3\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "evo_mat_02",
+        "name": "\u6dec\u9b42\u5996\u9aa8",
+        "type": "material"
+    },
+    {
+        "item_id": "talisman_zd_001",
+        "name": "\u6e05\u5fc3\u7389\u4f69",
+        "type": "talisman"
+    },
+    {
+        "item_id": "elixir_003",
+        "name": "\u6e05\u7075\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_003",
+        "name": "\u6e05\u7075\u4e39\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_103",
+        "name": "\u6e05\u7075\u8349",
+        "type": "material"
+    },
+    {
+        "item_id": "seed_103",
+        "name": "\u6e05\u7075\u8349\u79cd\u5b50",
+        "type": "seed"
+    },
+    {
+        "item_id": "mat_feather_phoenix",
+        "name": "\u706b\u51e4\u4e4b\u7fce",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_feather_crane",
+        "name": "\u706b\u9e64\u4e4b\u7fbd",
+        "type": "material"
+    },
+    {
+        "item_id": "xianyu_item_01",
+        "name": "\u7075\u6c60\u6478\u9c7c\u56fe",
+        "type": "special_item"
+    },
+    {
+        "item_id": "elixir_lyz_001",
+        "name": "\u7075\u773c\u4e4b\u6db2",
+        "type": "elixir"
+    },
+    {
+        "item_id": "mat_lyz_frag",
+        "name": "\u7075\u773c\u6728\u9ad3\u788e\u7247",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_001",
+        "name": "\u7075\u77f3",
+        "type": "material"
+    },
+    {
+        "item_id": "item_sesame_ticket",
+        "name": "\u7075\u9b42\u7684\u821e\u7968",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "item_firecracker",
+        "name": "\u7279\u5236\u7206\u7af9",
+        "type": "material"
+    },
+    {
+        "item_id": "treasure_xt_001",
+        "name": "\u7384\u5929\u65a9\u7075\u5251",
+        "type": "treasure"
+    },
+    {
+        "item_id": "treasure_ext_avatar",
+        "name": "\u7384\u7261\u5316\u5a74\u00b7\u7075\u5080",
+        "type": "treasure"
+    },
+    {
+        "item_id": "mat_puppet_xuantie",
+        "name": "\u7384\u94c1",
+        "type": "material"
+    },
+    {
+        "item_id": "treasure_001",
+        "name": "\u7384\u94c1\u5251",
+        "type": "treasure"
+    },
+    {
+        "item_id": "recipe_101",
+        "name": "\u7384\u94c1\u5251\u56fe\u7eb8",
+        "type": "recipe"
+    },
+    {
+        "item_id": "recipe_xuangu_001",
+        "name": "\u7384\u9aa8\u5316\u7130\u8bc0\u7389\u7b80",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_trial_jade",
+        "name": "\u7389\u9ad3\u829d",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_201",
+        "name": "\u767e\u5e74\u94c1\u6728",
+        "type": "material"
+    },
+    {
+        "item_id": "treasure_xt_006",
+        "name": "\u7687\u9cde\u7532",
+        "type": "treasure"
+    },
+    {
+        "item_id": "recipe_treasure_xt_003",
+        "name": "\u7687\u9cde\u7532\u56fe\u7eb8",
+        "type": "recipe"
+    },
+    {
+        "item_id": "recipe_treasure_xt_006",
+        "name": "\u7687\u9cde\u7532\u56fe\u7eb8",
+        "type": "recipe"
+    },
+    {
+        "item_id": "badge_qyz_trial",
+        "name": "\u771f\u4ed9\u8bd5\u950b",
+        "type": "badge"
+    },
+    {
+        "item_id": "mat_cangkun_poison",
+        "name": "\u78a7\u9e20\u6bd2\u56ca",
+        "type": "material"
+    },
+    {
+        "item_id": "beast_egg_01",
+        "name": "\u795e\u79d8\u7684\u7075\u517d\u86cb",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "talisman_101",
+        "name": "\u795e\u884c\u7b26",
+        "type": "talisman"
+    },
+    {
+        "item_id": "mat_dayan_shenshi_slip",
+        "name": "\u795e\u8bc6\u7389\u7b80",
+        "type": "material"
+    },
+    {
+        "item_id": "item_trial_pouch",
+        "name": "\u7981\u5730\u836f\u7bd3",
+        "type": "special_tool"
+    },
+    {
+        "item_id": "item_soul_silence_talisman",
+        "name": "\u7981\u8a00\u7b26",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_001d",
+        "name": "\u79d8\u5b9d\u7ebf\u7d22\u00b7\u4e01",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_001c",
+        "name": "\u79d8\u5b9d\u7ebf\u7d22\u00b7\u4e19",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_001b",
+        "name": "\u79d8\u5b9d\u7ebf\u7d22\u00b7\u4e59",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_001a",
+        "name": "\u79d8\u5b9d\u7ebf\u7d22\u00b7\u7532",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "item_dungeon_command_lock",
+        "name": "\u7a33\u63a7\u5168\u573a",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "mat_501",
+        "name": "\u7a7a\u95f4\u4e4b\u6838",
+        "type": "material"
+    },
+    {
+        "item_id": "quest_item_node_ice",
+        "name": "\u7a7a\u95f4\u8282\u70b9\u00b7\u5bd2\u51a5",
+        "type": "material"
+    },
+    {
+        "item_id": "quest_item_node_chaos",
+        "name": "\u7a7a\u95f4\u8282\u70b9\u00b7\u6df7\u6c8c",
+        "type": "material"
+    },
+    {
+        "item_id": "quest_item_node_fire",
+        "name": "\u7a7a\u95f4\u8282\u70b9\u00b7\u706b\u715e",
+        "type": "material"
+    },
+    {
+        "item_id": "quest_item_node_thunder",
+        "name": "\u7a7a\u95f4\u8282\u70b9\u00b7\u96f7\u66b4",
+        "type": "material"
+    },
+    {
+        "item_id": "quest_item_jiyin_skill",
+        "name": "\u7b2c\u4e8c\u5143\u795e\u6b8b\u7bc7",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "elixir_201",
+        "name": "\u7b51\u57fa\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "badge_ziling_face",
+        "name": "\u7d2b\u7075\u7684\u8f7b\u543b",
+        "type": "badge"
+    },
+    {
+        "item_id": "treasure_cangkun_armor",
+        "name": "\u7d2b\u94d6\u515c",
+        "type": "treasure"
+    },
+    {
+        "item_id": "recipe_cangkun_armor",
+        "name": "\u7d2b\u94d6\u515c\u56fe\u8c31",
+        "type": "recipe"
+    },
+    {
+        "item_id": "talisman_103",
+        "name": "\u805a\u7075\u7b26",
+        "type": "talisman"
+    },
+    {
+        "item_id": "quest_item_cangkun_map",
+        "name": "\u82cd\u5764\u6b8b\u56fe",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_cangkun_scroll",
+        "name": "\u82cd\u5764\u8def\u7ebf\u6b8b\u56fe",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_xutian_map",
+        "name": "\u865a\u5929\u6b8b\u56fe",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "treasure_xt_002",
+        "name": "\u865a\u5929\u9f0e",
+        "type": "treasure"
+    },
+    {
+        "item_id": "treasure_xt_202",
+        "name": "\u865a\u5929\u9f0e\u4eff\u5236\u54c1",
+        "type": "treasure"
+    },
+    {
+        "item_id": "quest_item_xtd_d",
+        "name": "\u865a\u5929\u9f0e\u6b8b\u7247\u00b7\u4e01",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_xtd_c",
+        "name": "\u865a\u5929\u9f0e\u6b8b\u7247\u00b7\u4e19",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_xtd_b",
+        "name": "\u865a\u5929\u9f0e\u6b8b\u7247\u00b7\u4e59",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_xtd_a",
+        "name": "\u865a\u5929\u9f0e\u6b8b\u7247\u00b7\u7532",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "elixir_void",
+        "name": "\u865a\u7075\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_void",
+        "name": "\u865a\u7075\u4e39\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_void_dust",
+        "name": "\u865a\u7a7a\u5c18\u57c3",
+        "type": "material"
+    },
+    {
+        "item_id": "evo_mat_01",
+        "name": "\u86ee\u8352\u517d\u8840",
+        "type": "material"
+    },
+    {
+        "item_id": "badge_kill_500",
+        "name": "\u8840\u624b\u4eba\u5c60",
+        "type": "badge"
+    },
+    {
+        "item_id": "mat_trial_blood",
+        "name": "\u8840\u7ebf\u8349",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_dayan_yanshen_slip",
+        "name": "\u884d\u795e\u7389\u7b80",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_spirit_frame",
+        "name": "\u8d64\u70bc\u91d1\u9aa8",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_trial_redfruit",
+        "name": "\u8d64\u7cbe\u679c",
+        "type": "material"
+    },
+    {
+        "item_id": "talisman_hh_001",
+        "name": "\u8ff7\u60c5\u7b26",
+        "type": "talisman"
+    },
+    {
+        "item_id": "quest_item_reverse_coord",
+        "name": "\u9006\u7075\u901a\u9053\u5750\u6807",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "treasure_202",
+        "name": "\u91d1\u5149\u7816",
+        "type": "treasure"
+    },
+    {
+        "item_id": "recipe_202",
+        "name": "\u91d1\u5149\u7816\u56fe\u7eb8",
+        "type": "recipe"
+    },
+    {
+        "item_id": "talisman_102",
+        "name": "\u91d1\u521a\u7b26",
+        "type": "talisman"
+    },
+    {
+        "item_id": "mat_202",
+        "name": "\u91d1\u7cbe\u77ff",
+        "type": "material"
+    },
+    {
+        "item_id": "treasure_101",
+        "name": "\u91d1\u86a8\u5b50\u6bcd\u5203",
+        "type": "treasure"
+    },
+    {
+        "item_id": "recipe_102",
+        "name": "\u91d1\u86a8\u5b50\u6bcd\u5203\u56fe\u7eb8",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_204_g",
+        "name": "\u91d1\u96f7\u7af9",
+        "type": "material"
+    },
+    {
+        "item_id": "blueprint_puppet_iron",
+        "name": "\u94c1\u7532\u6218\u5080\u56fe\u8c31",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_zhuimo_glyph",
+        "name": "\u9547\u9b54\u6b8b\u7bc6",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_402",
+        "name": "\u9634\u51dd\u4e4b\u6676",
+        "type": "material"
+    },
+    {
+        "item_id": "recipe_hh_001",
+        "name": "\u9634\u9633\u5408\u548c\u529f\u6cd5\u5377",
+        "type": "recipe"
+    },
+    {
+        "item_id": "treasure_xt_010",
+        "name": "\u9634\u9633\u5927\u4e94\u884c\u5c71",
+        "type": "treasure"
+    },
+    {
+        "item_id": "mat_203",
+        "name": "\u9634\u9b42\u4e1d",
+        "type": "material"
+    },
+    {
+        "item_id": "mat_spirit_snake_gall",
+        "name": "\u9644\u7075\u86c7\u80c6",
+        "type": "material"
+    },
+    {
+        "item_id": "badge_cny_2026",
+        "name": "\u964d\u4f0f\u5e74\u517d",
+        "type": "badge"
+    },
+    {
+        "item_id": "mat_feather_thunder_roc",
+        "name": "\u96f7\u9e4f\u4e4b\u7fbd",
+        "type": "material"
+    },
+    {
+        "item_id": "fragment_qyjj_1",
+        "name": "\u9752\u5143\u5251\u8bc0\uff08\u4e0a\uff09",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "fragment_qyjj_3",
+        "name": "\u9752\u5143\u5251\u8bc0\uff08\u4e0b\uff09",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "fragment_qyjj_2",
+        "name": "\u9752\u5143\u5251\u8bc0\uff08\u4e2d\uff09",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "technique_book_qyjj",
+        "name": "\u9752\u5143\u5251\u8bc0\uff08\u5b8c\u6574\u7248\uff09",
+        "type": "recipe"
+    },
+    {
+        "item_id": "treasure_201",
+        "name": "\u9752\u7af9\u8702\u4e91\u5251",
+        "type": "treasure"
+    },
+    {
+        "item_id": "recipe_201",
+        "name": "\u9752\u7af9\u8702\u4e91\u5251\u56fe\u7eb8",
+        "type": "recipe"
+    },
+    {
+        "item_id": "treasure_201_gj",
+        "name": "\u9752\u7af9\u8702\u4e91\u5251\uff08\u5e9a\u91d1\u7248\uff09",
+        "type": "treasure"
+    },
+    {
+        "item_id": "treasure_201_sl",
+        "name": "\u9752\u7af9\u8702\u4e91\u5251\uff08\u795e\u96f7\u7248\uff09",
+        "type": "treasure"
+    },
+    {
+        "item_id": "treasure_201_jl_gj",
+        "name": "\u9752\u7af9\u8702\u4e91\u5251\uff08\u91d1\u96f7\u7af9\u00b7\u5e9a\u91d1\u76f8\uff09",
+        "type": "treasure"
+    },
+    {
+        "item_id": "treasure_201_jl_sl",
+        "name": "\u9752\u7af9\u8702\u4e91\u5251\uff08\u91d1\u96f7\u7af9\u00b7\u795e\u96f7\u76f8\uff09",
+        "type": "treasure"
+    },
+    {
+        "item_id": "treasure_301",
+        "name": "\u9752\u9e3e\u5929\u76fe",
+        "type": "treasure"
+    },
+    {
+        "item_id": "recipe_304",
+        "name": "\u9752\u9e3e\u5929\u76fe\u56fe\u7eb8",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_feather_green_luan",
+        "name": "\u9752\u9e3e\u957f\u7fce",
+        "type": "material"
+    },
+    {
+        "item_id": "elixir_402",
+        "name": "\u98ce\u884c\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_402",
+        "name": "\u98ce\u884c\u4e39\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "treasure_203",
+        "name": "\u98ce\u96f7\u7fc5",
+        "type": "treasure"
+    },
+    {
+        "item_id": "recipe_203",
+        "name": "\u98ce\u96f7\u7fc5\u56fe\u7eb8",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_feather_kunpeng",
+        "name": "\u9cb2\u9e4f\u4e4b\u7fbd",
+        "type": "material"
+    },
+    {
+        "item_id": "elixir_101",
+        "name": "\u9ec4\u82bd\u4e39",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_105",
+        "name": "\u9ec4\u82bd\u4e39\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_huanglong_merit",
+        "name": "\u9ec4\u9f99\u519b\u529f\u724c",
+        "type": "material"
+    },
+    {
+        "item_id": "quest_item_huanglong_order",
+        "name": "\u9ec4\u9f99\u6025\u63f4\u4ee4",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "quest_item_huanglong_sect_order",
+        "name": "\u9ec4\u9f99\u6025\u63f4\u4ee4\uff08\u5b97\u95e8\u7248\uff09",
+        "type": "quest_item"
+    },
+    {
+        "item_id": "treasure_huanglong_banner",
+        "name": "\u9ec4\u9f99\u9547\u5cb3\u65d7",
+        "type": "treasure"
+    },
+    {
+        "item_id": "recipe_huanglong_banner",
+        "name": "\u9ec4\u9f99\u9547\u5cb3\u65d7\u56fe\u8c31",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_huanglong_flag",
+        "name": "\u9ec4\u9f99\u9635\u65d7\u6b8b\u7247",
+        "type": "material"
+    },
+    {
+        "item_id": "elixir_huanglong_recovery",
+        "name": "\u9f99\u86c7\u56de\u5143\u6563",
+        "type": "elixir"
+    },
+    {
+        "item_id": "recipe_huanglong_recovery",
+        "name": "\u9f99\u86c7\u56de\u5143\u6563\u4e39\u65b9",
+        "type": "recipe"
+    },
+    {
+        "item_id": "mat_dragon_soul_fruit",
+        "name": "\u9f99\u9b42\u5723\u679c",
+        "type": "material"
+    }
+]
