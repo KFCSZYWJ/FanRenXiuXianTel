@@ -50,10 +50,14 @@
 
   // ─── Build section: Quick Commands ─────────────────────────
 
-  function buildQuickSection() {
+  function buildQuickSection(q) {
     const quickCmds = XrStorage.getQuickCommands();
     if (quickCmds.length === 0) return "";
-    const items = quickCmds.map((qc, idx) =>
+    const lq = q ? q.toLowerCase() : "";
+    const items = quickCmds
+      .map((qc, idx) => ({ qc, idx }))
+      .filter(({ qc }) => !lq || qc.label.toLowerCase().includes(lq) || qc.fullText.toLowerCase().includes(lq))
+      .map(({ qc, idx }) =>
       '<div class="xr-cmd-item xr-quick-item" data-qidx="' + idx +
       '" data-full="' + XrUtils.escapeHtml(qc.fullText) + '">' +
       '<div class="xr-cmd-row">' +
@@ -73,12 +77,13 @@
 
   // ─── Build section: Favorites ────────────────────────────────
 
-  function buildFavSection() {
+  function buildFavSection(q) {
     const favStrs = XrStorage.getFavorites();
     if (favStrs.length === 0) return "";
     const all = XrStorage.getAllCommands();
     const items = all
       .filter((c) => favStrs.indexOf(c.cmd) !== -1)
+      .filter((c) => matchCmd(c, q))
       .map((c) => buildCmdItem(c))
       .join("");
     if (!items) return "";
@@ -92,10 +97,12 @@
 
   // ─── Build section: Recent ───────────────────────────────────
 
-  function buildRecentSection() {
+  function buildRecentSection(q) {
     const recent = XrStorage.getRecent();
     if (recent.length === 0) return "";
-    const items = recent.map((c) => buildCmdItem(c, true)).join("");
+    const items = recent
+      .filter((c) => matchCmd(c, q))
+      .map((c) => buildCmdItem(c, true)).join("");
     return (
       '<div class="xr-recent-section">' +
       '<div class="xr-recent-title">最近使用</div>' +

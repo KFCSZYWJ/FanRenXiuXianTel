@@ -330,7 +330,7 @@
       const q = (panel.querySelector(".xr-search-box").value || "").trim();
       const sb = panel.querySelector(".xr-search-box");
       if (_xrActiveTab === "freq") {
-        body.innerHTML = XrPanel.buildQuickSection() + XrPanel.buildFavSection() + XrPanel.buildRecentSection();
+        body.innerHTML = XrPanel.buildQuickSection(q) + XrPanel.buildFavSection(q) + XrPanel.buildRecentSection(q);
         bindCmdClicks(body);
         sb.placeholder = "搜索...";
       } else if (_xrActiveTab === "commands") {

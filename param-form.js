@@ -267,14 +267,14 @@
                 vals.push({ name: t.name, value: customVal, raw: t.raw, noBrackets: t.raw.indexOf("<") !== 0 });
               } else {
                 el = document.getElementById("xr-pf-" + i);
-                if (el && el.value) vals.push({ name: t.name, value: el.value, raw: t.raw, noBrackets: t.raw.indexOf("<") !== 0 });
+                vals.push({ name: t.name, value: el ? el.value : "", raw: t.raw, noBrackets: t.raw.indexOf("<") !== 0 });
               }
             } else {
               el = document.getElementById("xr-pf-" + i);
               val = el ? el.value.trim() : "";
               if (t.raw && t.raw.indexOf("[") === 0) {
                 vals.push({ name: t.name, value: val, raw: t.raw, noBrackets: true });
-              } else if (val) {
+              } else {
                 vals.push({ name: t.name, value: val });
               }
             }
