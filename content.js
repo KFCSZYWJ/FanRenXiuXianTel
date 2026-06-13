@@ -24,37 +24,242 @@
     { id: "items", label: "物品", icon: _SVG_ITEM },
   ];
 
-  // ─── Utilities (exposed for other modules) ───────────────────
+  // ─── Input Finding & Text Filling ──────────────────────────
+  //
+  // Multi-strategy input discovery + multi-method text insertion.
+  // If a new Telegram version changes the DOM, push a finder to
+  // _INPUT_FINDERS — the first one returning a visible element wins.
+  //
+  // Debug: localStorage.setItem('xr_debug', '1') enables console
+  // logging. window.__xr_diag__ exposes last-attempt diagnostics.
+
+  var _xrDiag = {};
+
+  window.__xr_diag__ = {
+    get last() { return _xrDiag; },
+    dump: function () { console.table([_xrDiag]); }
+  };
+
+  function _xrLog(msg, data) {
+    if (localStorage.getItem("xr_debug") === "1") {
+      console.log("[XrPanel] " + msg, data || "");
+    }
+  }
+
+  // ── Input finders (extensible) ──────────────────────────────
+
+  var _INPUT_FINDERS = [
+
+    // S1: Score visible contenteditable elements — no hardcoded
+    //     class names. Uses structural signals (peerId, position,
+    //     class keywords) that are stable across Telegram versions.
+    function scoreContentEditable() {
+      var all = document.querySelectorAll('[contenteditable="true"]');
+      var best = null, bestScore = -Infinity;
+      for (var i = 0; i < all.length; i++) {
+        var el = all[i];
+        if (el.offsetParent === null) continue;
+        var cls = (el.className || "").toString();
+        // Exclude decoy / placeholder / clone elements
+        if (/\b(fake|placeholder|clone)\b/i.test(cls)) continue;
+        var r = el.getBoundingClientRect();
+        if (r.width < 50 || r.height < 16) continue;
+
+        var score = 0;
+        // Real chat input has data-peer-id (current chat ID)
+        if (el.dataset.peerId !== undefined) score += 10;
+        // Has message-input-like class keyword
+        if (/input-message|message-input|compose-input/i.test(cls)) score += 5;
+        // Near viewport bottom (message box is always at the bottom)
+        if (r.bottom > window.innerHeight * 0.35) score += 3;
+        // Explicitly hidden from assistive tech
+        if (el.getAttribute("aria-hidden") === "true") score -= 20;
+
+        if (score > bestScore) { bestScore = score; best = el; }
+      }
+      return best;
+    },
+
+    // S2: Walk known message-container wrappers — works when the
+    //     container pattern is stable even if inner classes change.
+    function viaMessageContainer() {
+      var wrappers = document.querySelectorAll(
+        '[class*="input-message-container"], [class*="rows-wrapper-row"]'
+      );
+      for (var i = 0; i < wrappers.length; i++) {
+        var ed = wrappers[i].querySelector('[contenteditable="true"]');
+        if (ed) {
+          var r = ed.getBoundingClientRect();
+          if (r.width > 0 && r.height > 0) return ed;
+        }
+      }
+      return null;
+    },
+
+    // S3: Pure geometry — nearest text-like element to the
+    //     viewport bottom. Last resort, no class assumptions.
+    function nearestToBottom() {
+      var all = document.querySelectorAll(
+        '[contenteditable="true"], textarea, input:not([type="hidden"]):not([type="file"]):not([type="submit"]):not([type="button"])'
+      );
+      var best = null, bestBottom = -1;
+      for (var i = 0; i < all.length; i++) {
+        var r = all[i].getBoundingClientRect();
+        if (r.width < 60 || r.height < 16) continue;
+        if (r.bottom > bestBottom && r.bottom <= window.innerHeight + 100) {
+          bestBottom = r.bottom;
+          best = all[i];
+        }
+      }
+      return best;
+    }
+  ];
+
+  function _findInput() {
+    _xrDiag = { time: Date.now(), strategiesTried: 0 };
+    for (var i = 0; i < _INPUT_FINDERS.length; i++) {
+      try {
+        var el = _INPUT_FINDERS[i]();
+        _xrDiag.strategiesTried = i + 1;
+        if (el) {
+          var cls = (el.className || "").toString();
+          var rect = el.getBoundingClientRect();
+          _xrDiag.strategy = _INPUT_FINDERS[i].name || ("s" + (i + 1));
+          _xrDiag.elTag = el.tagName.toLowerCase();
+          _xrDiag.elClass = cls.slice(0, 80);
+          _xrDiag.elPeerId = el.dataset.peerId || "(none)";
+          _xrDiag.elRect = rect.width + "x" + rect.height + " @y=" + Math.round(rect.top);
+          _xrLog("input found via " + _xrDiag.strategy, _xrDiag);
+          return el;
+        }
+      } catch (e) {
+        _xrLog("finder " + i + " error: " + e.message);
+      }
+    }
+    _xrDiag.strategy = "none";
+    _xrLog("input NOT found — all " + _INPUT_FINDERS.length + " finders failed");
+    return null;
+  }
+
+  // ── Text insertion (multi-method fallback) ──────────────────
+
+  function _insertText(input, text, mode) {
+    var toInsert = mode === "append" ? " " + text : text;
+
+    // M1: execCommand — clean & fast, works in most Chromium
+    var before = (input.textContent || input.value || "").trim();
+    try {
+      if (mode === "replace") {
+        document.execCommand("selectAll", false, null);
+      } else {
+        var sel1 = window.getSelection();
+        var r1 = document.createRange();
+        r1.selectNodeContents(input);
+        r1.collapse(false);
+        sel1.removeAllRanges();
+        sel1.addRange(r1);
+      }
+      document.execCommand("insertText", false, toInsert);
+    } catch (e) { /* fall through */ }
+    var after = (input.textContent || input.value || "").trim();
+    if (after.includes(text.trim()) || after !== before) {
+      _xrDiag.method = "execCommand";
+      return true;
+    }
+
+    // M2: Selection API — standard, dispatches InputEvent so
+    //     React/Vue frameworks detect the change
+    try {
+      input.focus();
+      var sel2 = window.getSelection();
+      var r2 = document.createRange();
+      if (mode === "replace") {
+        r2.selectNodeContents(input);
+        r2.deleteContents();
+      } else {
+        r2.selectNodeContents(input);
+        r2.collapse(false);
+      }
+      r2.insertNode(document.createTextNode(toInsert));
+      r2.collapse(false);
+      sel2.removeAllRanges();
+      sel2.addRange(r2);
+      input.dispatchEvent(new InputEvent("input", {
+        bubbles: true, cancelable: true,
+        inputType: "insertText", data: toInsert
+      }));
+      var after2 = (input.textContent || input.value || "").trim();
+      if (after2.includes(text.trim())) {
+        _xrDiag.method = "SelectionAPI";
+        return true;
+      }
+    } catch (e) {
+      _xrLog("Selection API error: " + e.message);
+    }
+
+    // M3: Direct value set — for <input>/<textarea> elements
+    if ("value" in input) {
+      try {
+        input.value = mode === "replace" ? toInsert : (input.value || "") + toInsert;
+        input.dispatchEvent(new InputEvent("input", { bubbles: true }));
+        input.dispatchEvent(new Event("change", { bubbles: true }));
+        _xrDiag.method = "valueSet";
+        return true;
+      } catch (e) {
+        _xrLog("value set error: " + e.message);
+      }
+    }
+
+    // M4: Clipboard — last resort, user can Ctrl+V
+    try {
+      navigator.clipboard.writeText(text);
+      _xrDiag.method = "clipboard";
+      showToast("已复制到剪贴板，请 Ctrl+V 粘贴: " + text, 3000);
+      return "clipboard";
+    } catch (e) {
+      _xrDiag.method = "none";
+      _xrDiag.error = e.message;
+      _xrLog("ALL insert methods failed");
+      return false;
+    }
+  }
+
+  // ── Public API ──────────────────────────────────────────────
 
   function setInputText(text) {
-    const input = document.querySelector(
-      '.input-message-input[contenteditable="true"]'
-    );
-    if (!input) return false;
-    input.focus();
     _xr_filling = true;
-    document.execCommand("selectAll", false, null);
-    document.execCommand("insertText", false, text);
-    setTimeout(() => { _xr_filling = false; }, 250);
-    return true;
+    var input = _findInput();
+    if (!input) {
+      _xr_filling = false;
+      return false;
+    }
+    input.focus();
+    var result = _insertText(input, text, "replace");
+    if (result === "clipboard") {
+      _xr_filling = false;
+      return true;
+    }
+    if (!result) _xr_filling = false;
+    setTimeout(function () { _xr_filling = false; }, 250);
+    return result;
   }
 
   function appendInputText(text) {
-    const input = document.querySelector(
-      '.input-message-input[contenteditable="true"]'
-    );
-    if (!input) return false;
-    input.focus();
     _xr_filling = true;
-    const sel = window.getSelection();
-    const range = document.createRange();
-    range.selectNodeContents(input);
-    range.collapse(false);
-    sel.removeAllRanges();
-    sel.addRange(range);
-    document.execCommand("insertText", false, " " + text);
-    setTimeout(() => { _xr_filling = false; }, 250);
-    return true;
+    var input = _findInput();
+    if (!input) {
+      _xr_filling = false;
+      return false;
+    }
+    input.focus();
+    var result = _insertText(input, text, "append");
+    if (result === "clipboard") {
+      _xr_filling = false;
+      return true;
+    }
+    if (!result) _xr_filling = false;
+    setTimeout(function () { _xr_filling = false; }, 250);
+    return result;
   }
 
   function showToast(msg, duration) {
