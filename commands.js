@@ -23,6 +23,8 @@ const COMMAND_CATEGORIES = [
       { cmd: ".生平", desc: "生成修士生平", params: " [@用户]", tags: ["生平", "查看"] },
       { cmd: ".切换", desc: "切换操控角色", params: " <道号/ID/主魂>", note: "化身系统", tags: ["杂项", "化身", "切换"] },
       { cmd: ".使用", desc: "使用符箓或特殊道具", params: " <物品名> [参数]", tags: ["使用", "道具", "符箓"] },
+      { cmd: ".他的灵根", desc: "查看他人的灵根面板", params: " <@用户>", tags: ["查看", "属性", "灵根"] },
+      { cmd: ".我的状态", desc: "查看自己的各种状态（别名）", params: null, tags: ["查看", "状态", "别名"] },
     ]
   },
 
@@ -87,6 +89,7 @@ const COMMAND_CATEGORIES = [
       { cmd: ".修复黄龙点将", desc: "修复点将记录", params: " [名单]", tags: ["黄龙山", "征调", "修复"] },
       { cmd: ".黄龙发令", desc: "补发宗门版黄龙急援令", params: null, tags: ["黄龙山", "征调", "发令"] },
       { cmd: ".强制黄龙发令", desc: "管理/兜底强制重建名单并发令", params: " @队长 @成员2 @成员3 @成员4 @成员5", tags: ["黄龙山", "征调", "强制"] },
+      { cmd: ".宗门赐婚", desc: "宗门赐婚/道侣事件", params: null, tags: ["宗门", "赐婚", "道侣"] },
     ]
   },
 
@@ -365,6 +368,7 @@ const COMMAND_CATEGORIES = [
       { cmd: ".掌天瓶 养竹", desc: "逆养天雷竹", params: " [目标]", tags: ["掌天瓶", "养竹"] },
       { cmd: ".掌天瓶 化竹", desc: "将万年天雷竹炼成金雷竹", params: " [目标]", tags: ["掌天瓶", "化竹"] },
       { cmd: ".掌天瓶 养木", desc: "逆养万年养魂木", params: " [目标]", tags: ["掌天瓶", "养木"] },
+      { cmd: ".掌天瓶 养树", desc: "培养灵眼树胚", params: " [目标]", note: "消耗掌天绿液和灵眼树胚", tags: ["掌天瓶", "养树", "灵树"] },
       { cmd: ".幻世轮", desc: "查看大五行幻世轮状态", params: null, tags: ["灵宝", "幻世轮", "查看"] },
       { cmd: ".幻世诀", desc: "幻世诀相关", params: null, tags: ["灵宝", "幻世轮", "幻世诀"] },
       { cmd: ".大五行幻世轮", desc: "查看大五行幻世轮（全称）", params: null, tags: ["灵宝", "幻世轮"] },
@@ -409,6 +413,9 @@ const COMMAND_CATEGORIES = [
       { cmd: ".天机代卜", desc: "消耗修为换增益", params: null, note: "持续12h，冷却12h", tags: ["道侣", "天机", "增益"] },
       { cmd: ".斩断旧缘", desc: "情缘事件选项——斩断", params: null, tags: ["道侣", "情缘"] },
       { cmd: ".坚守本心", desc: "情缘事件选项——坚守", params: null, tags: ["道侣", "情缘"] },
+      { cmd: ".交换 法宝", desc: "南宫侯交易事件——交换法宝", params: null, tags: ["道侣", "交易", "南宫侯"] },
+      { cmd: ".交换 功法", desc: "南宫侯交易事件——交换功法", params: null, tags: ["道侣", "交易", "南宫侯"] },
+      { cmd: ".拒绝交易", desc: "南宫侯交易事件——拒绝交易", params: null, tags: ["道侣", "交易", "南宫侯"] },
     ]
   },
 
@@ -418,6 +425,7 @@ const COMMAND_CATEGORIES = [
     icon: "⚔️",
     commands: [
       { cmd: ".斗法", desc: "发起斗法", params: null, note: "每日神念限制约10次", tags: ["战斗", "斗法", "PVP"] },
+      { cmd: ".对决", desc: "发起对决（决斗别名）", params: " <目标>", tags: ["战斗", "决斗", "PVP"] },
       { cmd: ".决斗", desc: "发起决斗", params: null, note: "计入战斗限制", tags: ["战斗", "决斗", "PVP"] },
       { cmd: ".修为榜", desc: "查看修为排行", params: null, tags: ["战斗", "排行", "修为"] },
       { cmd: ".恶人榜", desc: "查看杀戮排行", params: null, tags: ["战斗", "排行", "杀戮"] },
@@ -425,7 +433,7 @@ const COMMAND_CATEGORIES = [
       { cmd: ".冤魂榜", desc: "查看冤魂排行", params: null, tags: ["战斗", "排行", "冤魂"] },
       { cmd: ".我的仇敌", desc: "查看仇敌名单", params: null, note: "对仇敌斗法战力+5%", tags: ["战斗", "仇敌", "复仇"] },
       { cmd: ".战力对比", desc: "对比两位修士的战力", params: " <目标A> <目标B>", tags: ["战斗", "战力", "对比"] },
-      { cmd: ".切磋木人", desc: "测试战力", params: " <境界>", note: "消耗1灵石；冷却2min；不掉修为", tags: ["战斗", "测试", "木人"] },
+      { cmd: ".切磋木人", desc: "测试战力", params: " <炼气/筑基/结丹/元婴/化神/炼虚>", choices: ["炼气","筑基","结丹","元婴","化神","炼虚"], note: "消耗1灵石；冷却2min；不掉修为", tags: ["战斗", "测试", "木人"] },
       { cmd: ".战力", desc: "测试对某境界战力", params: " <境界>", note: "不消耗灵石", tags: ["战斗", "测试", "战力"] },
       { cmd: ".天机遭遇战", desc: "查看/设置遭遇战", params: null, note: "每日最多2次", tags: ["战斗", "遭遇战"] },
       { cmd: ".天机遭遇战谨慎", desc: "遭遇战优先避让", params: null, tags: ["战斗", "遭遇战"] },
@@ -450,6 +458,7 @@ const COMMAND_CATEGORIES = [
       { cmd: ".奇袭 夺宝", desc: "风雷翅·无相劫掠", params: " @目标", note: "消耗2500修为；冷却6h", tags: ["战斗", "奇袭", "夺宝", "风雷翅"] },
       { cmd: ".奇袭 破阵", desc: "风雷翅·寂灭神雷", params: " @目标", note: "消耗2500修为；冷却6h", tags: ["战斗", "奇袭", "破阵", "风雷翅"] },
       { cmd: ".奇袭 瞬杀", desc: "风雷翅·血色惊雷", params: " @目标", note: "消耗2500修为；冷却6h；自身损失10%修为", tags: ["战斗", "奇袭", "瞬杀", "风雷翅"] },
+      { cmd: ".奇袭", desc: "发起奇袭（通用入口）", params: " <目标>", note: "消耗2500修为；冷却6h", tags: ["战斗", "奇袭", "风雷翅"] },
       { cmd: ".灭世", desc: "高风险惩戒命令", params: " <目标>", tags: ["战斗", "灭世"] },
       { cmd: ".残忍灭世", desc: "残忍灭世", params: " <目标>", tags: ["战斗", "灭世"] },
       { cmd: ".献上魂魄", desc: "玄骨/试炼类互动选项", params: null, tags: ["战斗", "试炼"] },
@@ -607,6 +616,26 @@ const COMMAND_CATEGORIES = [
       { cmd: ".苍坤洞府奖励", desc: "查看苍坤洞府奖励", params: null, tags: ["副本", "苍坤洞府", "奖励"] },
       { cmd: ".苍坤洞府帮助", desc: "查看苍坤洞府帮助", params: null, tags: ["副本", "苍坤洞府", "帮助"] },
       { cmd: ".解散苍坤洞府", desc: "解散苍坤洞府房间", params: null, tags: ["副本", "苍坤洞府", "解散"] },
+      // 落云秘圃
+      { cmd: ".开启落云秘圃", desc: "创建落云秘圃房间", params: null, note: "产出灵眼树胚", tags: ["副本", "落云秘圃", "创建"] },
+      { cmd: ".加入落云秘圃", desc: "加入落云秘圃队伍", params: " <房间ID>", tags: ["副本", "落云秘圃", "加入"] },
+      { cmd: ".进入落云秘圃", desc: "出发落云秘圃", params: null, note: "队长使用", tags: ["副本", "落云秘圃", "出发"] },
+      { cmd: ".落云秘圃状态", desc: "查看落云秘圃状态", params: null, tags: ["副本", "落云秘圃", "状态"] },
+      { cmd: ".落云秘圃帮助", desc: "查看落云秘圃帮助", params: null, tags: ["副本", "落云秘圃", "帮助"] },
+      { cmd: ".落云秘圃奖励", desc: "查看落云秘圃奖励", params: null, tags: ["副本", "落云秘圃", "奖励"] },
+      { cmd: ".落云抉择", desc: "落云秘圃流程选择", params: " <选项>", note: "队长操作", tags: ["副本", "落云秘圃", "抉择"] },
+      { cmd: ".解散落云秘圃", desc: "解散落云秘圃房间", params: null, tags: ["副本", "落云秘圃", "解散"] },
+      // 端午镇蛟
+      { cmd: ".开启端午镇蛟", desc: "创建端午镇蛟房间", params: null, note: "需要10人", tags: ["副本", "端午镇蛟", "创建"] },
+      { cmd: ".加入端午", desc: "加入端午镇蛟队伍", params: " <房间ID>", tags: ["副本", "端午镇蛟", "加入"] },
+      { cmd: ".进入端午", desc: "出发端午镇蛟", params: null, note: "队长使用；需要10人+投粽", tags: ["副本", "端午镇蛟", "出发"] },
+      { cmd: ".端午状态", desc: "查看端午镇蛟状态", params: null, tags: ["副本", "端午镇蛟", "状态"] },
+      { cmd: ".端午帮助", desc: "查看端午镇蛟帮助", params: null, tags: ["副本", "端午镇蛟", "帮助"] },
+      { cmd: ".端午奖励", desc: "查看端午镇蛟奖励", params: null, tags: ["副本", "端午镇蛟", "奖励"] },
+      { cmd: ".端午铸兵", desc: "准备阶段铸造武器", params: " <LDC金额> <武器>", note: "龙舟弩/雄黄雷/粽叶盾", tags: ["副本", "端午镇蛟", "铸兵"] },
+      { cmd: ".端午投粽", desc: "投入美味肉粽镇水", params: " [数量]", note: "从LDC shop购买；至少1个", tags: ["副本", "端午镇蛟", "投粽"] },
+      { cmd: ".端午抉择", desc: "端午镇蛟流程选择", params: " <选项>", note: "队长操作", tags: ["副本", "端午镇蛟", "抉择"] },
+      { cmd: ".解散端午", desc: "解散端午镇蛟房间", params: null, tags: ["副本", "端午镇蛟", "解散"] },
     ]
   },
 
@@ -655,6 +684,7 @@ const COMMAND_CATEGORIES = [
       { cmd: ".融资平仓", desc: "卖出融资仓", params: " <代码>", tags: ["交易", "股市", "融资"] },
       { cmd: ".融资额度", desc: "查看融资额度", params: null, tags: ["交易", "股市", "融资"] },
       { cmd: ".股市任务", desc: "查看每日股市任务", params: null, tags: ["交易", "股市", "任务"] },
+      { cmd: ".市场任务", desc: "查看每日股市任务（别名）", params: null, tags: ["交易", "股市", "任务"] },
       { cmd: ".领股息", desc: "领取股息", params: null, note: "需持仓满24h", tags: ["交易", "股市", "股息"] },
       { cmd: ".申购", desc: "IPO申购", params: " <数量>", tags: ["交易", "股市", "IPO", "申购"] },
       { cmd: ".我的申购", desc: "查看申购记录", params: null, tags: ["交易", "股市", "IPO", "申购"] },
@@ -700,6 +730,7 @@ const COMMAND_CATEGORIES = [
       { cmd: ".小", desc: "骰宝/赌局——押小", params: null, tags: ["博彩", "骰宝"] },
       { cmd: ".收手", desc: "骰宝/赌局——收手", params: null, tags: ["博彩", "骰宝"] },
       { cmd: ".德州局", desc: "创建德州牌局", params: " <盲注> <买入>", tags: ["博彩", "德州"] },
+      { cmd: ".加入牌局", desc: "加入德州牌局（私聊中使用）", params: null, tags: ["博彩", "德州", "牌局"] },
       { cmd: ".开始牌局", desc: "开始德州牌局", params: null, tags: ["博彩", "德州"] },
       { cmd: ".解散牌局", desc: "解散德州牌局", params: null, tags: ["博彩", "德州"] },
       { cmd: ".roll", desc: "随机掷骰/卜算入口", params: null, tags: ["博彩", "掷骰"] },
@@ -721,6 +752,9 @@ const COMMAND_CATEGORIES = [
       { cmd: ".中秋祈月", desc: "中秋节日活动", params: null, tags: ["杂项", "活动"] },
       { cmd: ".举报机器人", desc: "举报机器人", params: null, tags: ["杂项", "举报"] },
       { cmd: ".自证", desc: "反挂机验证", params: " <验证码> [数值]", tags: ["杂项", "验证"] },
+      { cmd: ".遗府", desc: "查看当前坐化遗府", params: null, tags: ["杂项", "遗府", "查看"] },
+      { cmd: ".遗府榜", desc: "查看遗府分宝记录", params: null, tags: ["杂项", "遗府", "排行"] },
+      { cmd: ".转动遗府", desc: "每期分宝一次", params: null, note: "每期限一次", tags: ["杂项", "遗府", "分宝"] },
     ]
   },
 ];
