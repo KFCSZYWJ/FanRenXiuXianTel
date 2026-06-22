@@ -1,1472 +1,1642 @@
 [
-    {
-        "item_id": "badge_cny_2026",
-        "name": "降伏年兽",
-        "type": "badge"
-    },
-    {
-        "item_id": "badge_duanwu_2026",
-        "name": "沧龙江镇蛟者",
-        "type": "badge"
-    },
-    {
-        "item_id": "badge_first_month",
-        "name": "天南第一修士",
-        "type": "badge"
-    },
-    {
-        "item_id": "badge_kill_500",
-        "name": "血手人屠",
-        "type": "badge"
-    },
-    {
-        "item_id": "badge_luoyun_ask",
-        "name": "宋玉对你产生了疑问",
-        "type": "badge"
-    },
-    {
-        "item_id": "badge_luoyun_cup",
-        "name": "宋玉使用过的茶杯",
-        "type": "badge"
-    },
-    {
-        "item_id": "badge_manhuzi_body",
-        "name": "乱星海炼体第一人",
-        "type": "badge"
-    },
-    {
-        "item_id": "badge_meining_air",
-        "name": "梅凝的灵气",
-        "type": "badge"
-    },
-    {
-        "item_id": "badge_mid_autumn_2025",
-        "name": "月满天南",
-        "type": "badge"
-    },
-    {
-        "item_id": "badge_nice_girl",
-        "name": "天南第一美女",
-        "type": "badge"
-    },
-    {
-        "item_id": "badge_qyz_alliance",
-        "name": "伐仙同盟",
-        "type": "badge"
-    },
-    {
-        "item_id": "badge_qyz_slayer",
-        "name": "斩青元者",
-        "type": "badge"
-    },
-    {
-        "item_id": "badge_qyz_trial",
-        "name": "真仙试锋",
-        "type": "badge"
-    },
-    {
-        "item_id": "badge_shihuang_outfits",
-        "name": "始皇的新衣",
-        "type": "badge"
-    },
-    {
-        "item_id": "badge_xianyu_ghost",
-        "name": "咸鱼的残魂",
-        "type": "badge"
-    },
-    {
-        "item_id": "badge_ziling_face",
-        "name": "紫灵的轻吻",
-        "type": "badge"
-    },
-    {
-        "item_id": "beast_egg_01",
-        "name": "神秘的灵兽蛋",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "blueprint_puppet_dayan",
-        "name": "大衍灵傀图谱",
-        "type": "recipe"
-    },
-    {
-        "item_id": "blueprint_puppet_iron",
-        "name": "铁甲战傀图谱",
-        "type": "recipe"
-    },
-    {
-        "item_id": "blueprint_puppet_shadow",
-        "name": "影傀图谱",
-        "type": "recipe"
-    },
-    {
-        "item_id": "blueprint_puppet_wood",
-        "name": "机关木傀图谱",
-        "type": "recipe"
-    },
-    {
-        "item_id": "blueprint_puppet_wuxing",
-        "name": "五行灵傀图谱",
-        "type": "recipe"
-    },
-    {
-        "item_id": "elixir_001",
-        "name": "增元丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_002",
-        "name": "凝气散",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_003",
-        "name": "清灵丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_004",
-        "name": "合气丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_005",
-        "name": "回灵丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_101",
-        "name": "黄芽丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_201",
-        "name": "筑基丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_301",
-        "name": "天火液",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_302",
-        "name": "凝魂丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_303",
-        "name": "三转重元丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_401",
-        "name": "九曲灵参丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_402",
-        "name": "风行丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_501",
-        "name": "九转凝魂丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_502",
-        "name": "太虚丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_901_revive",
-        "name": "九转还魂丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_bds_001",
-        "name": "丹魔心萃",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_duanwu_realgar_pill",
-        "name": "雄黄解毒丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_hfg_001",
-        "name": "九转解厄丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_hh_001",
-        "name": "合欢散",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_huanglong_recovery",
-        "name": "龙蛇回元散",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_lyz_001",
-        "name": "灵眼之液",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_trial_detox",
-        "name": "净髓露",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_trial_focus",
-        "name": "凝神露",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_trial_guard",
-        "name": "护脉散",
-        "type": "elixir"
-    },
-    {
-        "item_id": "elixir_void",
-        "name": "虚灵丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "evo_mat_01",
-        "name": "蛮荒兽血",
-        "type": "material"
-    },
-    {
-        "item_id": "evo_mat_02",
-        "name": "淬魂妖骨",
-        "type": "material"
-    },
-    {
-        "item_id": "form_101",
-        "name": "三才微尘阵",
-        "type": "formation"
-    },
-    {
-        "item_id": "form_201",
-        "name": "四象御法阵",
-        "type": "formation"
-    },
-    {
-        "item_id": "form_301",
-        "name": "五行颠倒阵",
-        "type": "formation"
-    },
-    {
-        "item_id": "form_qyjj",
-        "name": "大庚剑阵",
-        "type": "formation"
-    },
-    {
-        "item_id": "fragment_qyjj_1",
-        "name": "青元剑诀（上）",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "fragment_qyjj_2",
-        "name": "青元剑诀（中）",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "fragment_qyjj_3",
-        "name": "青元剑诀（下）",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "item_custom_root_token",
-        "name": "夺天造化丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "item_duanwu_lingshi_packet",
-        "name": "沧龙江灵石红包",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "item_duanwu_meat_zongzi",
-        "name": "美味肉粽",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "item_duanwu_zongye_talisman",
-        "name": "粽叶灵符",
-        "type": "talisman"
-    },
-    {
-        "item_id": "item_dungeon_command_lock",
-        "name": "稳控全场",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "item_firecracker",
-        "name": "特制爆竹",
-        "type": "material"
-    },
-    {
-        "item_id": "item_linuxdo_account_assessment_ticket",
-        "name": "LinuxDo账号评估券",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "item_lucky_charm",
-        "name": "幸运符",
-        "type": "talisman"
-    },
-    {
-        "item_id": "item_random_root",
-        "name": "洗髓丹",
-        "type": "elixir"
-    },
-    {
-        "item_id": "item_rename_card",
-        "name": "易名符",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "item_self_unreport_token",
-        "name": "养廉银",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "item_sesame_ticket",
-        "name": "灵魂的舞票",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "item_soul_silence_talisman",
-        "name": "禁言符",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "item_stock_permit",
-        "name": "乾坤财气引",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "item_trial_lockbox",
-        "name": "封灵匣",
-        "type": "special_tool"
-    },
-    {
-        "item_id": "item_trial_pouch",
-        "name": "禁地药篓",
-        "type": "special_tool"
-    },
-    {
-        "item_id": "item_zhan",
-        "name": "斩",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "luoyun_item_01",
-        "name": "宋玉的靓影",
-        "type": "special_item"
-    },
-    {
-        "item_id": "luoyun_item_02",
-        "name": "宋玉的询问",
-        "type": "special_item"
-    },
-    {
-        "item_id": "luoyun_item_03",
-        "name": "宋玉的茶杯",
-        "type": "special_item"
-    },
-    {
-        "item_id": "mat_001",
-        "name": "灵石",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_101",
-        "name": "凝血草",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_102",
-        "name": "一阶妖丹",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_103",
-        "name": "清灵草",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_201",
-        "name": "百年铁木",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_202",
-        "name": "金精矿",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_203",
-        "name": "阴魂丝",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_204",
-        "name": "天雷竹",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_204_g",
-        "name": "金雷竹",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_204_w",
-        "name": "万年天雷竹",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_205",
-        "name": "二级妖丹",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_301",
-        "name": "养魂木",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_301_w",
-        "name": "万年养魂木",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_302",
-        "name": "三级妖丹",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_303",
-        "name": "养魂木",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_401",
-        "name": "天凤之翎",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_402",
-        "name": "阴凝之晶",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_403",
-        "name": "一截灵眼之树",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_404",
-        "name": "四级妖丹",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_501",
-        "name": "空间之核",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_502",
-        "name": "九天神雷木",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_503",
-        "name": "太虚仙露",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_buzhou_stone",
-        "name": "不周山之石",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_cangkun_poison",
-        "name": "碧鸠毒囊",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_dao_dark",
-        "name": "法则碎片·暗",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "mat_dao_feng",
-        "name": "法则碎片·风",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "mat_dao_huo",
-        "name": "法则碎片·火",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "mat_dao_jin",
-        "name": "法则碎片·金",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "mat_dao_lei",
-        "name": "法则碎片·雷",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "mat_dao_mu",
-        "name": "法则碎片·木",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "mat_dao_shui",
-        "name": "法则碎片·水",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "mat_dao_space",
-        "name": "法则碎片·空间",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "mat_dao_tu",
-        "name": "法则碎片·土",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "mat_dayan_qianji_slip",
-        "name": "千机玉简",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_dayan_shenshi_slip",
-        "name": "神识玉简",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_dayan_yanshen_slip",
-        "name": "衍神玉简",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_dragon_soul_fruit",
-        "name": "龙魂圣果",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_duanwu_realgar",
-        "name": "雄黄残晶",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_duanwu_silk",
-        "name": "五色丝",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_feather_crane",
-        "name": "火鹤之羽",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_feather_crow",
-        "name": "三足乌翎",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_feather_green_luan",
-        "name": "青鸾长翎",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_feather_ice_phoenix",
-        "name": "冰凤之翎",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_feather_kunpeng",
-        "name": "鲲鹏之羽",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_feather_phoenix",
-        "name": "火凤之翎",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_feather_thunder_roc",
-        "name": "雷鹏之羽",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_gengjin",
-        "name": "庚金",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_hongmeng_qi",
-        "name": "一缕鸿蒙紫气",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_huanglong_flag",
-        "name": "黄龙阵旗残片",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_huanglong_merit",
-        "name": "黄龙军功牌",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_law_crystal_dark",
-        "name": "法则源晶·暗",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_law_crystal_feng",
-        "name": "法则源晶·风",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_law_crystal_huo",
-        "name": "法则源晶·火",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_law_crystal_jin",
-        "name": "法则源晶·金",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_law_crystal_lei",
-        "name": "法则源晶·雷",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_law_crystal_mu",
-        "name": "法则源晶·木",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_law_crystal_shui",
-        "name": "法则源晶·水",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_law_crystal_space",
-        "name": "法则源晶·空间",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_law_crystal_tu",
-        "name": "法则源晶·土",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_lingyan_seedling",
-        "name": "灵眼树胚",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_lyz_frag",
-        "name": "灵眼木髓碎片",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_mulan_flame",
-        "name": "慕兰圣灯残焰",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_puppet_core",
-        "name": "傀儡核心",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_puppet_frame",
-        "name": "机关骨架",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_puppet_xuantie",
-        "name": "玄铁",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_spirit_frame",
-        "name": "赤炼金骨",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_spirit_snake_gall",
-        "name": "附灵蛇胆",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_styx_sand",
-        "name": "一捧忘川之沙",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_trial_blood",
-        "name": "血线草",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_trial_jade",
-        "name": "玉髓芝",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_trial_redfruit",
-        "name": "赤精果",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_void_dust",
-        "name": "虚空尘埃",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_wan_nian_ling_ru",
-        "name": "万年灵乳",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_xirang",
-        "name": "九天息壤",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_zhuimo_glyph",
-        "name": "镇魔残篆",
-        "type": "material"
-    },
-    {
-        "item_id": "mat_zhuimo_heart",
-        "name": "古魔心核",
-        "type": "material"
-    },
-    {
-        "item_id": "merchant_item_01",
-        "name": "掌天瓶的仿制品",
-        "type": "special_tool"
-    },
-    {
-        "item_id": "merchant_item_02",
-        "name": "尘封的储物袋",
-        "type": "loot_box"
-    },
-    {
-        "item_id": "merchant_item_03",
-        "name": "残破的古传送阵盘",
-        "type": "special_tool"
-    },
-    {
-        "item_id": "quest_item_001a",
-        "name": "秘宝线索·甲",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_001b",
-        "name": "秘宝线索·乙",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_001c",
-        "name": "秘宝线索·丙",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_001d",
-        "name": "秘宝线索·丁",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_002",
-        "name": "完整的藏宝图",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_003",
-        "name": "南宫婉的信物",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_cangkun_map",
-        "name": "苍坤残图",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_cangkun_scroll",
-        "name": "苍坤路线残图",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_cangkun_yinring",
-        "name": "残缺阴环",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_dayan_fragment_fennian",
-        "name": "大衍诀残篇·分念",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_dayan_fragment_kongkui",
-        "name": "大衍诀残篇·控傀",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_dayan_fragment_ningshi",
-        "name": "大衍诀残篇·凝识",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_dayan_fragment_qianji",
-        "name": "大衍诀残篇·千机",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_dayan_fragment_yanshen",
-        "name": "大衍诀残篇·衍神",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_huanglong_order",
-        "name": "黄龙急援令",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_huanglong_sect_order",
-        "name": "黄龙急援令（宗门版）",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_jiyin_skill",
-        "name": "第二元神残篇",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_kunwu_pass",
-        "name": "昆吾通行令",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_node_chaos",
-        "name": "空间节点·混沌",
-        "type": "material"
-    },
-    {
-        "item_id": "quest_item_node_fire",
-        "name": "空间节点·火煞",
-        "type": "material"
-    },
-    {
-        "item_id": "quest_item_node_ice",
-        "name": "空间节点·寒冥",
-        "type": "material"
-    },
-    {
-        "item_id": "quest_item_node_thunder",
-        "name": "空间节点·雷暴",
-        "type": "material"
-    },
-    {
-        "item_id": "quest_item_reverse_coord",
-        "name": "逆灵通道坐标",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_ths_a",
-        "name": "啼魂妖核碎片·甲",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_ths_b",
-        "name": "啼魂妖核碎片·乙",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_ths_c",
-        "name": "啼魂妖核碎片·丙",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_ths_d",
-        "name": "啼魂妖核碎片·丁",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_xtd_a",
-        "name": "虚天鼎残片·甲",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_xtd_b",
-        "name": "虚天鼎残片·乙",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_xtd_c",
-        "name": "虚天鼎残片·丙",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_xtd_d",
-        "name": "虚天鼎残片·丁",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_xtj_a",
-        "name": "斩灵剑残刃·甲",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_xtj_b",
-        "name": "斩灵剑残刃·乙",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_xtj_c",
-        "name": "斩灵剑残刃·丙",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_xtj_d",
-        "name": "斩灵剑残刃·丁",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_xutian_map",
-        "name": "虚天残图",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_ycs_a",
-        "name": "元磁山核·甲",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_ycs_b",
-        "name": "元磁山核·乙",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_ycs_c",
-        "name": "元磁山核·丙",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_ycs_d",
-        "name": "元磁山核·丁",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_zhuimo_token",
-        "name": "坠魔谷禁制令",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_ztp_a",
-        "name": "掌天瓶残片·甲",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_ztp_b",
-        "name": "掌天瓶残片·乙",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_ztp_c",
-        "name": "掌天瓶残片·丙",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "quest_item_ztp_d",
-        "name": "掌天瓶残片·丁",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "recipe_001",
-        "name": "增元丹丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_002",
-        "name": "凝气散丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_003",
-        "name": "清灵丹丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_004",
-        "name": "合气丹丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_101",
-        "name": "玄铁剑图纸",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_102",
-        "name": "金蚨子母刃图纸",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_103",
-        "name": "乌龙幡图纸",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_105",
-        "name": "黄芽丹丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_201",
-        "name": "青竹蜂云剑图纸",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_202",
-        "name": "金光砖图纸",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_203",
-        "name": "风雷翅图纸",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_204",
-        "name": "旧紫城兜残谱",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_301",
-        "name": "天火液丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_302",
-        "name": "凝魂丹丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_303",
-        "name": "三转重元丹丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_304",
-        "name": "青鸾天盾图纸",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_401",
-        "name": "九曲灵参丹丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_401_new",
-        "name": "佑天神盾图纸",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_402",
-        "name": "风行丹丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_501",
-        "name": "九转凝魂丹丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_502",
-        "name": "太虚丹丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_bds_001",
-        "name": "丹魔心萃丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_cangkun_armor",
-        "name": "紫铖兜图谱",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_form_101",
-        "name": "三才微尘阵图纸",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_form_201",
-        "name": "四象御法阵图纸",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_form_301",
-        "name": "五行颠倒阵图纸",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_form_qyjj",
-        "name": "大庚剑阵阵图",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_hfg_001",
-        "name": "九转解厄丹丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_hh_001",
-        "name": "阴阳合和功法卷",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_huanglong_banner",
-        "name": "黄龙镇岳旗图谱",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_huanglong_recovery",
-        "name": "龙蛇回元散丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_law_crystal_dark",
-        "name": "法则源晶·暗 配方",
-        "type": "recipe_internal"
-    },
-    {
-        "item_id": "recipe_law_crystal_feng",
-        "name": "法则源晶·风 配方",
-        "type": "recipe_internal"
-    },
-    {
-        "item_id": "recipe_law_crystal_huo",
-        "name": "法则源晶·火 配方",
-        "type": "recipe_internal"
-    },
-    {
-        "item_id": "recipe_law_crystal_jin",
-        "name": "法则源晶·金 配方",
-        "type": "recipe_internal"
-    },
-    {
-        "item_id": "recipe_law_crystal_lei",
-        "name": "法则源晶·雷 配方",
-        "type": "recipe_internal"
-    },
-    {
-        "item_id": "recipe_law_crystal_mu",
-        "name": "法则源晶·木 配方",
-        "type": "recipe_internal"
-    },
-    {
-        "item_id": "recipe_law_crystal_shui",
-        "name": "法则源晶·水 配方",
-        "type": "recipe_internal"
-    },
-    {
-        "item_id": "recipe_law_crystal_space",
-        "name": "法则源晶·空间 配方",
-        "type": "recipe_internal"
-    },
-    {
-        "item_id": "recipe_law_crystal_tu",
-        "name": "法则源晶·土 配方",
-        "type": "recipe_internal"
-    },
-    {
-        "item_id": "recipe_seven_flame_fan",
-        "name": "七焰扇图纸",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_treasure_xt_003",
-        "name": "皇鳞甲图纸",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_treasure_xt_006",
-        "name": "皇鳞甲图纸",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_trial_detox",
-        "name": "净髓露丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_trial_focus",
-        "name": "凝神露丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_trial_guard",
-        "name": "护脉散丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_trifle_fan",
-        "name": "三焰扇图纸",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_void",
-        "name": "虚灵丹丹方",
-        "type": "recipe"
-    },
-    {
-        "item_id": "recipe_xuangu_001",
-        "name": "玄骨化焰诀玉简",
-        "type": "recipe"
-    },
-    {
-        "item_id": "red_packet_big",
-        "name": "天道大红包",
-        "type": "quest_item"
-    },
-    {
-        "item_id": "seed_101",
-        "name": "凝血草种子",
-        "type": "seed"
-    },
-    {
-        "item_id": "seed_103",
-        "name": "清灵草种子",
-        "type": "seed"
-    },
-    {
-        "item_id": "seed_104",
-        "name": "一小节天雷竹根部",
-        "type": "seed"
-    },
-    {
-        "item_id": "seed_105",
-        "name": "一小段养魂木根部",
-        "type": "seed"
-    },
-    {
-        "item_id": "talisman_101",
-        "name": "神行符",
-        "type": "talisman"
-    },
-    {
-        "item_id": "talisman_102",
-        "name": "金刚符",
-        "type": "talisman"
-    },
-    {
-        "item_id": "talisman_103",
-        "name": "聚灵符",
-        "type": "talisman"
-    },
-    {
-        "item_id": "talisman_hh_001",
-        "name": "迷情符",
-        "type": "talisman"
-    },
-    {
-        "item_id": "talisman_kunwu_teleport",
-        "name": "大挪移令",
-        "type": "talisman"
-    },
-    {
-        "item_id": "talisman_zd_001",
-        "name": "清心玉佩",
-        "type": "talisman"
-    },
-    {
-        "item_id": "technique_book_qyjj",
-        "name": "青元剑诀（完整版）",
-        "type": "recipe"
-    },
-    {
-        "item_id": "treasure_001",
-        "name": "玄铁剑",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_101",
-        "name": "金蚨子母刃",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_102",
-        "name": "乌龙幡",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_201",
-        "name": "青竹蜂云剑",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_201_gj",
-        "name": "青竹蜂云剑（庚金版）",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_201_jl_gj",
-        "name": "青竹蜂云剑（金雷竹·庚金相）",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_201_jl_sl",
-        "name": "青竹蜂云剑（金雷竹·神雷相）",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_201_sl",
-        "name": "青竹蜂云剑（神雷版）",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_202",
-        "name": "金光砖",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_203",
-        "name": "风雷翅",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_204",
-        "name": "旧紫城兜残胚",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_301",
-        "name": "青鸾天盾",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_401",
-        "name": "佑天神盾",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_cangkun_armor",
-        "name": "紫铖兜",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_ext_avatar",
-        "name": "玄牡化婴·灵傀",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_huanglong_banner",
-        "name": "黄龙镇岳旗",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_seven_flame_fan",
-        "name": "七焰扇",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_trifle_fan",
-        "name": "三焰扇",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_xt_001",
-        "name": "玄天斩灵剑",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_xt_002",
-        "name": "虚天鼎",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_xt_003",
-        "name": "元磁神山",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_xt_004",
-        "name": "掌天瓶",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_xt_005",
-        "name": "啼魂兽妖核",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_xt_006",
-        "name": "皇鳞甲",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_xt_007",
-        "name": "北极元晶山",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_xt_008",
-        "name": "昊阴寒魄山",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_xt_009",
-        "name": "太乙青山",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_xt_010",
-        "name": "阴阳大五行山",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_xt_011",
-        "name": "元合五极山",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_xt_012",
-        "name": "大五行幻世轮",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_xt_013",
-        "name": "乾蓝冰焰",
-        "type": "treasure"
-    },
-    {
-        "item_id": "treasure_xt_202",
-        "name": "虚天鼎仿制品",
-        "type": "treasure"
-    },
-    {
-        "item_id": "xianyu_item_01",
-        "name": "灵池摸鱼图",
-        "type": "special_item"
-    }
+  {
+    "item_id": "badge_cny_2026",
+    "name": "降伏年兽",
+    "type": "badge"
+  },
+  {
+    "item_id": "badge_duanwu_2026",
+    "name": "沧龙江镇蛟者",
+    "type": "badge"
+  },
+  {
+    "item_id": "badge_first_month",
+    "name": "天南第一修士",
+    "type": "badge"
+  },
+  {
+    "item_id": "badge_kill_500",
+    "name": "血手人屠",
+    "type": "badge"
+  },
+  {
+    "item_id": "badge_luoyun_ask",
+    "name": "宋玉对你产生了疑问",
+    "type": "badge"
+  },
+  {
+    "item_id": "badge_luoyun_cup",
+    "name": "宋玉使用过的茶杯",
+    "type": "badge"
+  },
+  {
+    "item_id": "badge_manhuzi_body",
+    "name": "乱星海炼体第一人",
+    "type": "badge"
+  },
+  {
+    "item_id": "badge_meining_air",
+    "name": "梅凝的灵气",
+    "type": "badge"
+  },
+  {
+    "item_id": "badge_mid_autumn_2025",
+    "name": "月满天南",
+    "type": "badge"
+  },
+  {
+    "item_id": "badge_nice_girl",
+    "name": "天南第一美女",
+    "type": "badge"
+  },
+  {
+    "item_id": "badge_qyz_alliance",
+    "name": "伐仙同盟",
+    "type": "badge"
+  },
+  {
+    "item_id": "badge_qyz_slayer",
+    "name": "斩青元者",
+    "type": "badge"
+  },
+  {
+    "item_id": "badge_qyz_trial",
+    "name": "真仙试锋",
+    "type": "badge"
+  },
+  {
+    "item_id": "badge_shihuang_outfits",
+    "name": "始皇的新衣",
+    "type": "badge"
+  },
+  {
+    "item_id": "badge_xianyu_ghost",
+    "name": "咸鱼的残魂",
+    "type": "badge"
+  },
+  {
+    "item_id": "badge_ziling_face",
+    "name": "紫灵的轻吻",
+    "type": "badge"
+  },
+  {
+    "item_id": "beast_egg_01",
+    "name": "神秘的灵兽蛋",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "blueprint_puppet_dayan",
+    "name": "大衍灵傀图谱",
+    "type": "recipe"
+  },
+  {
+    "item_id": "blueprint_puppet_iron",
+    "name": "铁甲战傀图谱",
+    "type": "recipe"
+  },
+  {
+    "item_id": "blueprint_puppet_shadow",
+    "name": "影傀图谱",
+    "type": "recipe"
+  },
+  {
+    "item_id": "blueprint_puppet_wood",
+    "name": "机关木傀图谱",
+    "type": "recipe"
+  },
+  {
+    "item_id": "blueprint_puppet_wuxing",
+    "name": "五行灵傀图谱",
+    "type": "recipe"
+  },
+  {
+    "item_id": "elixir_001",
+    "name": "增元丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_002",
+    "name": "凝气散",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_003",
+    "name": "清灵丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_004",
+    "name": "合气丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_005",
+    "name": "回灵丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_101",
+    "name": "黄芽丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_201",
+    "name": "筑基丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_301",
+    "name": "天火液",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_302",
+    "name": "凝魂丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_303",
+    "name": "三转重元丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_401",
+    "name": "九曲灵参丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_402",
+    "name": "风行丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_501",
+    "name": "九转凝魂丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_502",
+    "name": "太虚丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_901_revive",
+    "name": "九转还魂丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_bds_001",
+    "name": "丹魔心萃",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_duanwu_realgar_pill",
+    "name": "雄黄解毒丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_hfg_001",
+    "name": "九转解厄丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_hh_001",
+    "name": "合欢散",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_huanglong_recovery",
+    "name": "龙蛇回元散",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_lyz_001",
+    "name": "灵眼之液",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_trial_detox",
+    "name": "净髓露",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_trial_focus",
+    "name": "凝神露",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_trial_guard",
+    "name": "护脉散",
+    "type": "elixir"
+  },
+  {
+    "item_id": "elixir_void",
+    "name": "虚灵丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "evo_mat_01",
+    "name": "蛮荒兽血",
+    "type": "material"
+  },
+  {
+    "item_id": "evo_mat_02",
+    "name": "淬魂妖骨",
+    "type": "material"
+  },
+  {
+    "item_id": "form_101",
+    "name": "三才微尘阵",
+    "type": "formation"
+  },
+  {
+    "item_id": "form_201",
+    "name": "四象御法阵",
+    "type": "formation"
+  },
+  {
+    "item_id": "form_301",
+    "name": "五行颠倒阵",
+    "type": "formation"
+  },
+  {
+    "item_id": "form_qyjj",
+    "name": "大庚剑阵",
+    "type": "formation"
+  },
+  {
+    "item_id": "fragment_qyjj_1",
+    "name": "青元剑诀（上）",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "fragment_qyjj_2",
+    "name": "青元剑诀（中）",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "fragment_qyjj_3",
+    "name": "青元剑诀（下）",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "item_custom_root_token",
+    "name": "夺天造化丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "item_duanwu_lingshi_packet",
+    "name": "沧龙江灵石红包",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "item_duanwu_meat_zongzi",
+    "name": "美味肉粽",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "item_duanwu_zongye_talisman",
+    "name": "粽叶灵符",
+    "type": "talisman"
+  },
+  {
+    "item_id": "item_dungeon_command_lock",
+    "name": "稳控全场",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "item_firecracker",
+    "name": "特制爆竹",
+    "type": "material"
+  },
+  {
+    "item_id": "item_linuxdo_account_assessment_ticket",
+    "name": "LinuxDo账号评估券",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "item_lucky_charm",
+    "name": "幸运符",
+    "type": "talisman"
+  },
+  {
+    "item_id": "item_random_root",
+    "name": "洗髓丹",
+    "type": "elixir"
+  },
+  {
+    "item_id": "item_rename_card",
+    "name": "易名符",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "item_self_unreport_token",
+    "name": "养廉银",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "item_sesame_ticket",
+    "name": "灵魂的舞票",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "item_soul_silence_talisman",
+    "name": "禁言符",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "item_stock_permit",
+    "name": "乾坤财气引",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "item_trial_lockbox",
+    "name": "封灵匣",
+    "type": "special_tool"
+  },
+  {
+    "item_id": "item_trial_pouch",
+    "name": "禁地药篓",
+    "type": "special_tool"
+  },
+  {
+    "item_id": "item_zhan",
+    "name": "斩",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "luoyun_item_01",
+    "name": "宋玉的靓影",
+    "type": "special_item"
+  },
+  {
+    "item_id": "luoyun_item_02",
+    "name": "宋玉的询问",
+    "type": "special_item"
+  },
+  {
+    "item_id": "luoyun_item_03",
+    "name": "宋玉的茶杯",
+    "type": "special_item"
+  },
+  {
+    "item_id": "mat_001",
+    "name": "灵石",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_101",
+    "name": "凝血草",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_102",
+    "name": "一阶妖丹",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_103",
+    "name": "清灵草",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_201",
+    "name": "百年铁木",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_202",
+    "name": "金精矿",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_203",
+    "name": "阴魂丝",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_204",
+    "name": "天雷竹",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_204_g",
+    "name": "金雷竹",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_204_w",
+    "name": "万年天雷竹",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_205",
+    "name": "二级妖丹",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_301",
+    "name": "养魂木",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_301_w",
+    "name": "万年养魂木",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_302",
+    "name": "三级妖丹",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_303",
+    "name": "养魂木",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_401",
+    "name": "天凤之翎",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_402",
+    "name": "阴凝之晶",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_403",
+    "name": "一截灵眼之树",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_404",
+    "name": "四级妖丹",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_501",
+    "name": "空间之核",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_502",
+    "name": "九天神雷木",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_503",
+    "name": "太虚仙露",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_buzhou_stone",
+    "name": "不周山之石",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_cangkun_poison",
+    "name": "碧鸠毒囊",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_dao_dark",
+    "name": "法则碎片·暗",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "mat_dao_feng",
+    "name": "法则碎片·风",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "mat_dao_huo",
+    "name": "法则碎片·火",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "mat_dao_jin",
+    "name": "法则碎片·金",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "mat_dao_lei",
+    "name": "法则碎片·雷",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "mat_dao_mu",
+    "name": "法则碎片·木",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "mat_dao_shui",
+    "name": "法则碎片·水",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "mat_dao_space",
+    "name": "法则碎片·空间",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "mat_dao_tu",
+    "name": "法则碎片·土",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "mat_dayan_qianji_slip",
+    "name": "千机玉简",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_dayan_shenshi_slip",
+    "name": "神识玉简",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_dayan_yanshen_slip",
+    "name": "衍神玉简",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_dragon_soul_fruit",
+    "name": "龙魂圣果",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_duanwu_realgar",
+    "name": "雄黄残晶",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_duanwu_silk",
+    "name": "五色丝",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_feather_crane",
+    "name": "火鹤之羽",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_feather_crow",
+    "name": "三足乌翎",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_feather_green_luan",
+    "name": "青鸾长翎",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_feather_ice_phoenix",
+    "name": "冰凤之翎",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_feather_kunpeng",
+    "name": "鲲鹏之羽",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_feather_phoenix",
+    "name": "火凤之翎",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_feather_thunder_roc",
+    "name": "雷鹏之羽",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_gengjin",
+    "name": "庚金",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_hongmeng_qi",
+    "name": "一缕鸿蒙紫气",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_huanglong_flag",
+    "name": "黄龙阵旗残片",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_huanglong_merit",
+    "name": "黄龙军功牌",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_law_crystal_dark",
+    "name": "法则源晶·暗",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_law_crystal_feng",
+    "name": "法则源晶·风",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_law_crystal_huo",
+    "name": "法则源晶·火",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_law_crystal_jin",
+    "name": "法则源晶·金",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_law_crystal_lei",
+    "name": "法则源晶·雷",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_law_crystal_mu",
+    "name": "法则源晶·木",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_law_crystal_shui",
+    "name": "法则源晶·水",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_law_crystal_space",
+    "name": "法则源晶·空间",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_law_crystal_tu",
+    "name": "法则源晶·土",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_lingyan_seedling",
+    "name": "灵眼树胚",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_lyz_frag",
+    "name": "灵眼木髓碎片",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_mulan_flame",
+    "name": "慕兰圣灯残焰",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_puppet_core",
+    "name": "傀儡核心",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_puppet_frame",
+    "name": "机关骨架",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_puppet_xuantie",
+    "name": "玄铁",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_spirit_frame",
+    "name": "赤炼金骨",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_spirit_snake_gall",
+    "name": "附灵蛇胆",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_styx_sand",
+    "name": "一捧忘川之沙",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_trial_blood",
+    "name": "血线草",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_trial_jade",
+    "name": "玉髓芝",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_trial_redfruit",
+    "name": "赤精果",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_void_dust",
+    "name": "虚空尘埃",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_wan_nian_ling_ru",
+    "name": "万年灵乳",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_xirang",
+    "name": "九天息壤",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_zhuimo_glyph",
+    "name": "镇魔残篆",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_zhuimo_heart",
+    "name": "古魔心核",
+    "type": "material"
+  },
+  {
+    "item_id": "merchant_item_01",
+    "name": "掌天瓶的仿制品",
+    "type": "special_tool"
+  },
+  {
+    "item_id": "merchant_item_02",
+    "name": "尘封的储物袋",
+    "type": "loot_box"
+  },
+  {
+    "item_id": "merchant_item_03",
+    "name": "残破的古传送阵盘",
+    "type": "special_tool"
+  },
+  {
+    "item_id": "quest_item_001a",
+    "name": "秘宝线索·甲",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_001b",
+    "name": "秘宝线索·乙",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_001c",
+    "name": "秘宝线索·丙",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_001d",
+    "name": "秘宝线索·丁",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_002",
+    "name": "完整的藏宝图",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_003",
+    "name": "南宫婉的信物",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_cangkun_map",
+    "name": "苍坤残图",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_cangkun_scroll",
+    "name": "苍坤路线残图",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_cangkun_yinring",
+    "name": "残缺阴环",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_dayan_fragment_fennian",
+    "name": "大衍诀残篇·分念",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_dayan_fragment_kongkui",
+    "name": "大衍诀残篇·控傀",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_dayan_fragment_ningshi",
+    "name": "大衍诀残篇·凝识",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_dayan_fragment_qianji",
+    "name": "大衍诀残篇·千机",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_dayan_fragment_yanshen",
+    "name": "大衍诀残篇·衍神",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_huanglong_order",
+    "name": "黄龙急援令",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_huanglong_sect_order",
+    "name": "黄龙急援令（宗门版）",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_jiyin_skill",
+    "name": "第二元神残篇",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_kunwu_pass",
+    "name": "昆吾通行令",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_node_chaos",
+    "name": "空间节点·混沌",
+    "type": "material"
+  },
+  {
+    "item_id": "quest_item_node_fire",
+    "name": "空间节点·火煞",
+    "type": "material"
+  },
+  {
+    "item_id": "quest_item_node_ice",
+    "name": "空间节点·寒冥",
+    "type": "material"
+  },
+  {
+    "item_id": "quest_item_node_thunder",
+    "name": "空间节点·雷暴",
+    "type": "material"
+  },
+  {
+    "item_id": "quest_item_reverse_coord",
+    "name": "逆灵通道坐标",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_ths_a",
+    "name": "啼魂妖核碎片·甲",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_ths_b",
+    "name": "啼魂妖核碎片·乙",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_ths_c",
+    "name": "啼魂妖核碎片·丙",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_ths_d",
+    "name": "啼魂妖核碎片·丁",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_xtd_a",
+    "name": "虚天鼎残片·甲",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_xtd_b",
+    "name": "虚天鼎残片·乙",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_xtd_c",
+    "name": "虚天鼎残片·丙",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_xtd_d",
+    "name": "虚天鼎残片·丁",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_xtj_a",
+    "name": "斩灵剑残刃·甲",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_xtj_b",
+    "name": "斩灵剑残刃·乙",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_xtj_c",
+    "name": "斩灵剑残刃·丙",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_xtj_d",
+    "name": "斩灵剑残刃·丁",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_xutian_map",
+    "name": "虚天残图",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_ycs_a",
+    "name": "元磁山核·甲",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_ycs_b",
+    "name": "元磁山核·乙",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_ycs_c",
+    "name": "元磁山核·丙",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_ycs_d",
+    "name": "元磁山核·丁",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_zhuimo_token",
+    "name": "坠魔谷禁制令",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_ztp_a",
+    "name": "掌天瓶残片·甲",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_ztp_b",
+    "name": "掌天瓶残片·乙",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_ztp_c",
+    "name": "掌天瓶残片·丙",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_ztp_d",
+    "name": "掌天瓶残片·丁",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "recipe_001",
+    "name": "增元丹丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_002",
+    "name": "凝气散丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_003",
+    "name": "清灵丹丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_004",
+    "name": "合气丹丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_101",
+    "name": "玄铁剑图纸",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_102",
+    "name": "金蚨子母刃图纸",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_103",
+    "name": "乌龙幡图纸",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_105",
+    "name": "黄芽丹丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_201",
+    "name": "青竹蜂云剑图纸",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_202",
+    "name": "金光砖图纸",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_203",
+    "name": "风雷翅图纸",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_204",
+    "name": "旧紫城兜残谱",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_301",
+    "name": "天火液丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_302",
+    "name": "凝魂丹丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_303",
+    "name": "三转重元丹丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_304",
+    "name": "青鸾天盾图纸",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_401",
+    "name": "九曲灵参丹丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_401_new",
+    "name": "佑天神盾图纸",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_402",
+    "name": "风行丹丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_501",
+    "name": "九转凝魂丹丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_502",
+    "name": "太虚丹丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_bds_001",
+    "name": "丹魔心萃丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_cangkun_armor",
+    "name": "紫铖兜图谱",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_form_101",
+    "name": "三才微尘阵图纸",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_form_201",
+    "name": "四象御法阵图纸",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_form_301",
+    "name": "五行颠倒阵图纸",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_form_qyjj",
+    "name": "大庚剑阵阵图",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_hfg_001",
+    "name": "九转解厄丹丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_hh_001",
+    "name": "阴阳合和功法卷",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_huanglong_banner",
+    "name": "黄龙镇岳旗图谱",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_huanglong_recovery",
+    "name": "龙蛇回元散丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_law_crystal_dark",
+    "name": "法则源晶·暗 配方",
+    "type": "recipe_internal"
+  },
+  {
+    "item_id": "recipe_law_crystal_feng",
+    "name": "法则源晶·风 配方",
+    "type": "recipe_internal"
+  },
+  {
+    "item_id": "recipe_law_crystal_huo",
+    "name": "法则源晶·火 配方",
+    "type": "recipe_internal"
+  },
+  {
+    "item_id": "recipe_law_crystal_jin",
+    "name": "法则源晶·金 配方",
+    "type": "recipe_internal"
+  },
+  {
+    "item_id": "recipe_law_crystal_lei",
+    "name": "法则源晶·雷 配方",
+    "type": "recipe_internal"
+  },
+  {
+    "item_id": "recipe_law_crystal_mu",
+    "name": "法则源晶·木 配方",
+    "type": "recipe_internal"
+  },
+  {
+    "item_id": "recipe_law_crystal_shui",
+    "name": "法则源晶·水 配方",
+    "type": "recipe_internal"
+  },
+  {
+    "item_id": "recipe_law_crystal_space",
+    "name": "法则源晶·空间 配方",
+    "type": "recipe_internal"
+  },
+  {
+    "item_id": "recipe_law_crystal_tu",
+    "name": "法则源晶·土 配方",
+    "type": "recipe_internal"
+  },
+  {
+    "item_id": "recipe_seven_flame_fan",
+    "name": "七焰扇图纸",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_treasure_xt_003",
+    "name": "皇鳞甲图纸",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_treasure_xt_006",
+    "name": "皇鳞甲图纸",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_trial_detox",
+    "name": "净髓露丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_trial_focus",
+    "name": "凝神露丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_trial_guard",
+    "name": "护脉散丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_trifle_fan",
+    "name": "三焰扇图纸",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_void",
+    "name": "虚灵丹丹方",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_xuangu_001",
+    "name": "玄骨化焰诀玉简",
+    "type": "recipe"
+  },
+  {
+    "item_id": "red_packet_big",
+    "name": "天道大红包",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "seed_101",
+    "name": "凝血草种子",
+    "type": "seed"
+  },
+  {
+    "item_id": "seed_103",
+    "name": "清灵草种子",
+    "type": "seed"
+  },
+  {
+    "item_id": "seed_104",
+    "name": "一小节天雷竹根部",
+    "type": "seed"
+  },
+  {
+    "item_id": "seed_105",
+    "name": "一小段养魂木根部",
+    "type": "seed"
+  },
+  {
+    "item_id": "talisman_101",
+    "name": "神行符",
+    "type": "talisman"
+  },
+  {
+    "item_id": "talisman_102",
+    "name": "金刚符",
+    "type": "talisman"
+  },
+  {
+    "item_id": "talisman_103",
+    "name": "聚灵符",
+    "type": "talisman"
+  },
+  {
+    "item_id": "talisman_hh_001",
+    "name": "迷情符",
+    "type": "talisman"
+  },
+  {
+    "item_id": "talisman_kunwu_teleport",
+    "name": "大挪移令",
+    "type": "talisman"
+  },
+  {
+    "item_id": "talisman_zd_001",
+    "name": "清心玉佩",
+    "type": "talisman"
+  },
+  {
+    "item_id": "technique_book_qyjj",
+    "name": "青元剑诀（完整版）",
+    "type": "recipe"
+  },
+  {
+    "item_id": "treasure_001",
+    "name": "玄铁剑",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_101",
+    "name": "金蚨子母刃",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_102",
+    "name": "乌龙幡",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_201",
+    "name": "青竹蜂云剑",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_201_gj",
+    "name": "青竹蜂云剑（庚金版）",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_201_jl_gj",
+    "name": "青竹蜂云剑（金雷竹·庚金相）",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_201_jl_sl",
+    "name": "青竹蜂云剑（金雷竹·神雷相）",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_201_sl",
+    "name": "青竹蜂云剑（神雷版）",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_202",
+    "name": "金光砖",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_203",
+    "name": "风雷翅",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_204",
+    "name": "旧紫城兜残胚",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_301",
+    "name": "青鸾天盾",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_401",
+    "name": "佑天神盾",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_cangkun_armor",
+    "name": "紫铖兜",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_ext_avatar",
+    "name": "玄牡化婴·灵傀",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_huanglong_banner",
+    "name": "黄龙镇岳旗",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_seven_flame_fan",
+    "name": "七焰扇",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_trifle_fan",
+    "name": "三焰扇",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_xt_001",
+    "name": "玄天斩灵剑",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_xt_002",
+    "name": "虚天鼎",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_xt_003",
+    "name": "元磁神山",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_xt_004",
+    "name": "掌天瓶",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_xt_005",
+    "name": "啼魂兽妖核",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_xt_006",
+    "name": "皇鳞甲",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_xt_007",
+    "name": "北极元晶山",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_xt_008",
+    "name": "昊阴寒魄山",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_xt_009",
+    "name": "太乙青山",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_xt_010",
+    "name": "阴阳大五行山",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_xt_011",
+    "name": "元合五极山",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_xt_012",
+    "name": "大五行幻世轮",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_xt_013",
+    "name": "乾蓝冰焰",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_xt_202",
+    "name": "虚天鼎仿制品",
+    "type": "treasure"
+  },
+  {
+    "item_id": "xianyu_item_01",
+    "name": "灵池摸鱼图",
+    "type": "special_item"
+  },
+  {
+    "item_id": "badge_yanyue_wife_guardian",
+    "name": "护妻狂魔",
+    "type": "badge"
+  },
+  {
+    "item_id": "elixir_yanyue_moon_dew",
+    "name": "月华玉露",
+    "type": "elixir"
+  },
+  {
+    "item_id": "item_fishing_bait_demon_blood",
+    "name": "妖血饵",
+    "type": "material"
+  },
+  {
+    "item_id": "item_fishing_bait_moon",
+    "name": "月华饵",
+    "type": "material"
+  },
+  {
+    "item_id": "item_fishing_bait_plain",
+    "name": "凡饵",
+    "type": "material"
+  },
+  {
+    "item_id": "item_fishing_bait_spirit_rice",
+    "name": "灵米饵",
+    "type": "material"
+  },
+  {
+    "item_id": "item_fishing_bait_spirit_worm",
+    "name": "灵虫饵",
+    "type": "material"
+  },
+  {
+    "item_id": "item_fishing_rod_basic",
+    "name": "青竹钓竿",
+    "type": "special_tool"
+  },
+  {
+    "item_id": "manual_yanyue_sword_thread",
+    "name": "剑气化丝心得",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "mat_fish_chiwei_huoli",
+    "name": "赤尾火鲤",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_fish_hantan_yuepo",
+    "name": "寒潭月魄鱼",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_fish_luanxing_lingdiao",
+    "name": "乱星灵鲷",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_fish_meat",
+    "name": "灵鱼肉",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_fish_mojiao_shadow",
+    "name": "墨蛟幼影",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_fish_qinglin_ji",
+    "name": "青鳞小鲫",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_fish_scale",
+    "name": "灵鱼鳞",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_fish_wujin_lingqiu",
+    "name": "乌金灵鳅",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_fish_yinxu_lian",
+    "name": "银须灵鲢",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_fishing_waterweed",
+    "name": "水草团",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_yanyue_blood_sword_iron",
+    "name": "血剑铁髓",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_yanyue_cut_red_silk",
+    "name": "断红绫",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_yanyue_mirror_sand",
+    "name": "掩月镜砂",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_yanyue_sunv_rune",
+    "name": "素女禁纹",
+    "type": "material"
+  },
+  {
+    "item_id": "mat_yanyue_yinyang_sword_thread",
+    "name": "阴阳剑丝",
+    "type": "material"
+  },
+  {
+    "item_id": "quest_item_yanyue_moon_letter_fragment",
+    "name": "月影传书残页",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_yanyue_moon_palace_token",
+    "name": "月殿残令",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_yanyue_secret_message",
+    "name": "掩月密讯",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "quest_item_yanyue_wedding_invitation",
+    "name": "红绫婚帖",
+    "type": "quest_item"
+  },
+  {
+    "item_id": "recipe_yanyue_blood_demon_sword",
+    "name": "血魔剑残图",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_yanyue_ningguang_mirror",
+    "name": "凝光宝镜图谱",
+    "type": "recipe"
+  },
+  {
+    "item_id": "recipe_yanyue_yinyang_swords",
+    "name": "阴阳冰火大剑图谱",
+    "type": "recipe"
+  },
+  {
+    "item_id": "treasure_yanyue_blood_demon_sword",
+    "name": "血魔剑",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_yanyue_ningguang_mirror",
+    "name": "凝光宝镜",
+    "type": "treasure"
+  },
+  {
+    "item_id": "treasure_yanyue_yinyang_icefire_swords",
+    "name": "阴阳冰火大剑",
+    "type": "treasure"
+  }
 ]
